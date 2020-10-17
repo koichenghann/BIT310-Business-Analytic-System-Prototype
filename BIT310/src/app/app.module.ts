@@ -2,10 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { RouterModule, Routes } from '@angular/router';
-
+import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SalesChartComponent } from './dashboard/sales-chart/sales-chart.component';
@@ -18,7 +19,15 @@ import { DataEntryManagementComponent } from './data-entry-management/data-entry
 import { DetailedReportComponent } from './detailed-report/detailed-report/detailed-report.component';
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
 import { SideNavComponent } from './side-nav/side-nav/side-nav.component';
+
+
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 @NgModule({
   declarations: [
@@ -39,10 +48,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   ],
   imports: [
     routing,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

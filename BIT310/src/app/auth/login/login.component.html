@@ -1,1 +1,40 @@
-<p>login works!</p>
+<div class="card-wrapper" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <mat-card class="form-card mat-elevation-z10">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-subtitle>Kindly fill in the form to Login</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form (submit)="onAddPost(postForm)" #loginForm="ngForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            type="text"
+            name="username"
+            placeholder="Enter username"
+            ngModel
+            required
+            #username="ngModel">
+            <mat-error *ngIf="username.invalid">Username is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            ngModel
+            required
+            #password="ngModel">
+            <mat-error *ngIf="password.invalid">Password is required</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" id="submitButton">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
