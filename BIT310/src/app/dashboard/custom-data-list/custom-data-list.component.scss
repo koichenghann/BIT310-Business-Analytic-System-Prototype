@@ -1,8 +1,12 @@
+$header-background-color: #40c4de;
+
+
+
 .wrapper-card{
   /* background-color: #439F9E; */
   height: 100%;
   width: 100%;
-  padding: 1em 2em 2em 1em !important;
+  padding: 1.5em 3em 3em 1.5em !important;
   // background-color: green;
   box-sizing:border-box !important;
   padding: 1em;
@@ -18,7 +22,7 @@ mat-card{
   display: block;
 }
 mat-card-header{
-  background-color: #40c4de;
+  background-color: $header-background-color;
   background-image: url("/assets/image/Teal_gradient_background_3.jpg");
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;

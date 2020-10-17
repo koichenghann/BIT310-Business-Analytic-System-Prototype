@@ -2,7 +2,7 @@ $white-1: #fafafa;
 
 .mat-drawer-container {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -19,5 +19,5 @@ $white-1: #fafafa;
 
 .example-sidenav {
   padding: 20px;
-  width: 25em;
+  width: 22em;
 }

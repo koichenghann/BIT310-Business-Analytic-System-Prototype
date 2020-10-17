@@ -8,6 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { DefaultModule } from './layouts/default/default.module';
+// import { SideNavService }
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -20,7 +23,9 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { DataEntryManagementComponent } from './data-entry-management/data-entry-management/data-entry-management.component';
 import { DetailedReportComponent } from './detailed-report/detailed-report/detailed-report.component';
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
-import { SideNavComponent } from './side-nav/side-nav/side-nav.component';
+import { SideNavComponent } from './shared/side-nav/side-nav.component';
+import { BaseCardTemplateComponent } from './base-card-template/base-card-template.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -30,7 +35,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { BaseCardTemplateComponent } from './base-card-template/base-card-template.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+import { SideNavService } from './shared/side-nav/side-nav.service';
+// import { AreaComponent } from './test-area/widgets/area/area.component';
+// import { HighchartsChartModule } from 'highcharts-angular';
+
+
 
 
 @NgModule({
@@ -48,10 +61,12 @@ import { BaseCardTemplateComponent } from './base-card-template/base-card-templa
     DetailedReportComponent,
     ForecastReportComponent,
     SideNavComponent,
-    BaseCardTemplateComponent
-
+    BaseCardTemplateComponent,
+    HeaderComponent
+    // AreaComponent
   ],
   imports: [
+    DefaultModule,
     routing,
     FlexLayoutModule,
     FormsModule,
@@ -65,9 +80,14 @@ import { BaseCardTemplateComponent } from './base-card-template/base-card-templa
     MatInputModule,
     MatButtonModule,
     MatStepperModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatDividerModule
+    // HighchartsChartModule
   ],
-  providers: [],
+  providers: [SideNavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 <mat-drawer-container class="mat-drawer-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
-    <p>Auto-resizing sidenav</p>
+  <mat-drawer #drawer class="example-sidenav" mode="side" >
     <p>current route: {{currentRoute}}</p>
+    Main Features:
     <ol>
       <li><a routerLink="/login">Login</a></li>
       <li><a routerLink="/singup">Signup</a></li>
@@ -12,10 +12,14 @@
       <li><a routerLink="/detailed-report">Detailed Report</a></li>
       <li><a routerLink="/forecast-report">Forecast Report</a></li>
     </ol>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+
+    <br>
+    Test Area:
+    <ol>
+      <li><a routerLink="/test-area-1">Test Area 1</a></li>
+      <li><a routerLink="/posts">Posts</a></li>
+    </ol>
+
 
   </mat-drawer>
 

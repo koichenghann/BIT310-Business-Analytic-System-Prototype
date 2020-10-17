@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { DataEntryManagementComponent } from './data-entry-management/data-entry-management/data-entry-management.component';
 import { DetailedReportComponent } from './detailed-report/detailed-report/detailed-report.component';
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
+import { TestAreaOneComponent } from './test-area/test-area-one/test-area-one.component';
+import { PostsComponent } from './test-area/posts/posts.component';
 
 
 
@@ -19,7 +21,9 @@ const APP_ROUTES: Routes = [
   {path:'monthly-sales-report', component: MonthlySalesReportComponent},
   {path:'data-entry-management', component: DataEntryManagementComponent},
   {path:'detailed-report', component: DetailedReportComponent},
-  {path:'forecast-report', component: ForecastReportComponent}
+  {path:'forecast-report', component: ForecastReportComponent},
+  {path:'test-area-1', component: TestAreaOneComponent},
+  {path:'posts', component: PostsComponent}
 
   // {path:'', redirectTo: '/home', pathMatch: 'full'},
 ];
