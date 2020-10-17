@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductSalesDistributionTableComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

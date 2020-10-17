@@ -30,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { BaseCardTemplateComponent } from './base-card-template/base-card-template.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     DataEntryManagementComponent,
     DetailedReportComponent,
     ForecastReportComponent,
-    SideNavComponent
+    SideNavComponent,
+    BaseCardTemplateComponent
 
   ],
   imports: [
