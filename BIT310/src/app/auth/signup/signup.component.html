@@ -1,12 +1,59 @@
 <div class="card-wrapper" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
   <mat-card class="form-card mat-elevation-z10">
     <mat-card-header>
-      <mat-card-title>Signup</mat-card-title>
-      <mat-card-subtitle>Kindly fill in the form to Signup</mat-card-subtitle>
+      <mat-card-title>Register</mat-card-title>
+      <mat-card-subtitle>Kindly fill in the form to create an account</mat-card-subtitle>
     </mat-card-header>
 
     <mat-card-content>
-      <form (submit)="onAddPost(postForm)" #loginForm="ngForm">
+      <!-- <button mat-raised-button (click)="isEditable = !isEditable">
+        {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
+      </button> -->
+
+      <mat-horizontal-stepper linear #stepper>
+        <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+          <form [formGroup]="firstFormGroup" fxLayout="row wrap" fxLayoutGap="20px grid">
+            <ng-template matStepLabel>Fill out your name</ng-template>
+            <mat-form-field appearance="outline" fxFlex="50%">
+              <mat-label>Username</mat-label>
+              <input matInput formControlName="username" placeholder="Enter username" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline" fxFlex="50%">
+              <mat-label>Password</mat-label>
+              <input matInput formControlName="password" placeholder="Enter password" required>
+            </mat-form-field>
+
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Fill out your address</ng-template>
+            <mat-form-field>
+              <mat-label>Address</mat-label>
+              <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                     required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <p>You are now done.</p>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+      <!-- <form #signupForm="ngForm">
         <mat-form-field appearance="outline">
           <mat-label>Username</mat-label>
           <input
@@ -99,7 +146,7 @@
         </mat-form-field>
 
         <button mat-raised-button color="primary" type="submit" id="submitButton">Login</button>
-      </form>
+      </form> -->
     </mat-card-content>
   </mat-card>
 </div>
