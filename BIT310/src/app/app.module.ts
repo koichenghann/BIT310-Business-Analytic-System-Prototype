@@ -43,6 +43,7 @@ import { SideNavService } from './shared/side-nav/side-nav.service';
 // import { AreaComponent } from './test-area/widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SalesReportComponent } from './charts/sales-report/sales-report.component';
+import { ProductSalesDistributionReportComponent } from './charts/product-sales-distribution-report/product-sales-distribution-report.component';
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
@@ -67,6 +68,7 @@ import { SalesReportComponent } from './charts/sales-report/sales-report.compone
     BaseCardTemplateComponent,
     HeaderComponent,
     SalesReportComponent,
+    ProductSalesDistributionReportComponent,
     // PieComponent
     // CardComponent
     // AreaComponent
