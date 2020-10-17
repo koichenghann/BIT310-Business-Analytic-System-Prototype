@@ -10,6 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CardComponent } from 'src/app/test-area/widgets/card/card.component';
 import { MatIconModule } from '@angular/material/icon';
+import { PieComponent } from 'src/app/test-area/widgets/pie/pie.component';
+import { TestService } from '../test.service';
 
 
 
@@ -19,7 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
     TestAreaOneComponent,
     PostsComponent,
     AreaComponent,
-    CardComponent
+    CardComponent,
+    PieComponent
   ],
   imports: [
     CommonModule,
@@ -29,6 +32,9 @@ import { MatIconModule } from '@angular/material/icon';
     FlexLayoutModule,
     MatIconModule
 
+  ],
+  providers: [
+    TestService
   ]
 })
 export class DefaultModule { }

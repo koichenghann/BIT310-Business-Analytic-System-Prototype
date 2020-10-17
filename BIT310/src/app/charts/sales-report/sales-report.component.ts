@@ -19,8 +19,7 @@ export class SalesReportComponent implements OnInit {
     this.chartOptions = {
         chart: {
             type: 'area',
-            backgroundColor: null,
-            height: '22%'
+            height: '20%'
 
         },
         title: {

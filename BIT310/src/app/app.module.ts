@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { DefaultModule } from './layouts/default/default.module';
+import { DefaultModule } from './test-area/default/default.module';
 // import { SideNavService }
 
 import { AppComponent } from './app.component';
@@ -43,6 +43,7 @@ import { SideNavService } from './shared/side-nav/side-nav.service';
 // import { AreaComponent } from './test-area/widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SalesReportComponent } from './charts/sales-report/sales-report.component';
+// import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
 
@@ -65,7 +66,8 @@ import { SalesReportComponent } from './charts/sales-report/sales-report.compone
     SideNavComponent,
     BaseCardTemplateComponent,
     HeaderComponent,
-    SalesReportComponent
+    SalesReportComponent,
+    // PieComponent
     // CardComponent
     // AreaComponent
   ],
