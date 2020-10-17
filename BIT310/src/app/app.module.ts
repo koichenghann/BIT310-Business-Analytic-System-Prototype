@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+
 import { DefaultModule } from './test-area/default/default.module';
 // import { SideNavService }
 
@@ -24,10 +25,14 @@ import { DataEntryManagementComponent } from './data-entry-management/data-entry
 import { DetailedReportComponent } from './detailed-report/detailed-report/detailed-report.component';
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
 import { SideNavComponent } from './shared/side-nav/side-nav.component';
+import { SideNavCtsComponent } from './shared/side-nav-cts/side-nav-cts.component'
 import { BaseCardTemplateComponent } from './base-card-template/base-card-template.component';
 import { HeaderComponent } from './shared/header/header.component';
 
 
+
+//angular material
+import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -39,6 +44,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSelectModule } from '@angular/material/select';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+
 import { SideNavService } from './shared/side-nav/side-nav.service';
 // import { AreaComponent } from './test-area/widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
@@ -69,6 +81,8 @@ import { ProductSalesDistributionReportComponent } from './charts/product-sales-
     HeaderComponent,
     SalesReportComponent,
     ProductSalesDistributionReportComponent,
+    SideNavCtsComponent,
+
     // PieComponent
     // CardComponent
     // AreaComponent
@@ -92,7 +106,15 @@ import { ProductSalesDistributionReportComponent } from './charts/product-sales-
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
+    MatListModule,
     MatDividerModule,
+    MatGridListModule,
+    MatSelectModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatCheckboxModule,
+
+
     HighchartsChartModule
   ],
   providers: [SideNavService],
