@@ -9,6 +9,8 @@ import { DetailedReportComponent } from './detailed-report/detailed-report/detai
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
 
 
+
+
 const APP_ROUTES: Routes = [
   {path:'login', component: LoginComponent},
   {path:'singup', component: SignupComponent},

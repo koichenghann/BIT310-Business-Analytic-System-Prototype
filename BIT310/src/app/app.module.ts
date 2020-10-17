@@ -17,6 +17,8 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { DataEntryManagementComponent } from './data-entry-management/data-entry-management/data-entry-management.component';
 import { DetailedReportComponent } from './detailed-report/detailed-report/detailed-report.component';
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
+import { SideNavComponent } from './side-nav/side-nav/side-nav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,16 @@ import { ForecastReportComponent } from './forecast-report/forecast-report/forec
     DashboardComponent,
     DataEntryManagementComponent,
     DetailedReportComponent,
-    ForecastReportComponent
+    ForecastReportComponent,
+    SideNavComponent
+
   ],
   imports: [
     routing,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
