@@ -11,46 +11,198 @@
       </button> -->
 
       <mat-horizontal-stepper linear #stepper>
-        <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
-          <form [formGroup]="firstFormGroup" fxLayout="row wrap" fxLayoutGap="20px grid">
-            <ng-template matStepLabel>Fill out your name</ng-template>
-            <mat-form-field appearance="outline" fxFlex="50%">
-              <mat-label>Username</mat-label>
-              <input matInput formControlName="username" placeholder="Enter username" required>
-            </mat-form-field>
-            <mat-form-field appearance="outline" fxFlex="50%">
-              <mat-label>Password</mat-label>
-              <input matInput formControlName="password" placeholder="Enter password" required>
-            </mat-form-field>
 
-            <div>
-              <button mat-button matStepperNext>Next</button>
-            </div>
-          </form>
-        </mat-step>
 
         <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
           <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Fill out your address</ng-template>
-            <mat-form-field>
-              <mat-label>Address</mat-label>
-              <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                     required>
-            </mat-form-field>
-            <div>
+            <ng-template matStepLabel>Plan</ng-template>
+            <table>
+              <tr (click)="rowSelectHandler(1)"  [ngClass]="{'my-class': highlightedDiv1 === 1}">
+                <td><input type="radio" id="free" value="1" formControlName="package"></td>
+                <td>
+                  <div class="package-name">
+                    Free
+                  </div>
+                  <div class="package-description">
+                    This is the free trial, user will be given a duration of 1
+                    month to try out all our basic features. User will not be
+                    charged by the end fo this plan.
+                  </div>
+                </td>
+              </tr>
+
+              <tr (click)="rowSelectHandler(2)" [ngClass]="{'my-class': highlightedDiv2 === 1}">
+                <td><input type="radio" id="basic" value="2" formControlName="package"></td>
+                <td>
+                  <div class="package-name">
+                    Basic
+                  </div>
+                  <div class="package-description">
+                    This is the basic plan, it covers all the basic features
+                    of the business analytic solution, this is sufficient for first
+                    time user.
+                  </div>
+                </td>
+              </tr>
+
+              <tr (click)="rowSelectHandler(3)"  [ngClass]="{'my-class': highlightedDiv3 === 1}">
+                <td><input type="radio" id="premium" value="3" formControlName="package"></td>
+                <td>
+                  <div class="package-name">
+                    Premium
+                  </div>
+                  <div class="package-description">
+                    This is the premium plan, it covers all avaliable features of
+                    the the business analytic solution, this is for advance user
+                    who seek the ultimate business analytic experience.
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <div class="form-button-group">
+              <!-- <button mat-button matStepperPrevious>Back</button> -->
+              <button mat-button matStepperNext>Next</button>
+            </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="thirdFormGroup" [editable]="isEditable">
+          <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel>Pricing</ng-template>
+            <table>
+              <tr (click)="rowSelectHandler2(1)"  [ngClass]="{'my-class': highlightedDiv21 === 1}">
+                <td><input type="radio" id="6m" value="1" formControlName="pricing"></td>
+                <td>
+                  <div class="package-name">
+                    6 Month (100MYR)
+                  </div>
+                  <div class="package-description">
+                    No discount will be given for this subscription duration.
+                    All features of the selected plan will be available for
+                    the upcomming 6 months.
+                  </div>
+                </td>
+              </tr>
+
+              <tr (click)="rowSelectHandler2(2)" [ngClass]="{'my-class': highlightedDiv22 === 1}">
+                <td><input type="radio" id="1y" value="2" formControlName="pricing"></td>
+                <td>
+                  <div class="package-name">
+                    1 Year  (280MYR)
+                  </div>
+                  <div class="package-description">
+                    10% discount will be given for this subscription duration.
+                    All features of the selected plan will be available for
+                    the upcomming 12 months.
+                  </div>
+                </td>
+              </tr>
+
+              <tr (click)="rowSelectHandler2(3)"  [ngClass]="{'my-class': highlightedDiv23 === 1}">
+                <td><input type="radio" id="4y" value="3" formControlName="pricing"></td>
+                <td>
+                  <div class="package-name">
+                    4 Year  (720MYR)
+                  </div>
+                  <div class="package-description">
+                    30% discount will be given for this subscription duration.
+                    All features of the selected plan will be available for
+                    the upcomming 48 months.
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="form-button-group">
               <button mat-button matStepperPrevious>Back</button>
               <button mat-button matStepperNext>Next</button>
             </div>
           </form>
         </mat-step>
 
-        <mat-step>
-          <ng-template matStepLabel>Done</ng-template>
+
+
+        <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+          <form [formGroup]="firstFormGroup" fxLayout="row wrap" fxLayoutGap="20px grid">
+            <ng-template matStepLabel>User</ng-template>
+
+            <mat-form-field  fxFlex="100%">
+              <mat-label>Username</mat-label>
+              <input matInput formControlName="username" placeholder="Enter username" type="text" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="50%">
+              <mat-label>Password</mat-label>
+              <input matInput formControlName="password" placeholder="Enter password" type="password" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="50%">
+              <mat-label>Re-password</mat-label>
+              <input matInput formControlName="password2" placeholder="Enter password" type="password" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="50%">
+              <mat-label>Lastname</mat-label>
+              <input matInput formControlName="lastname" placeholder="Enter firstname" type="text" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="50%">
+              <mat-label>Firstname</mat-label>
+              <input matInput formControlName="firstname" placeholder="Enter lastname" type="text">
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="100%">
+              <mat-label>E-mail</mat-label>
+              <input matInput formControlName="email" placeholder="Enter e-mail" type="text" >
+            </mat-form-field>
+
+            <div class="form-button-group">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
           <p>You are now done.</p>
-          <div>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button (click)="stepper.reset()">Reset</button>
-          </div>
+
+        </mat-step>
+
+        <mat-step [stepControl]="fourthFormGroup" [editable]="isEditable">
+          <form [formGroup]="fourthFormGroup" fxLayout="row wrap" fxLayoutGap="20px grid">
+            <ng-template matStepLabel>Payment</ng-template>
+
+            <mat-form-field  fxFlex="100%">
+              <mat-label>Card Holder Name</mat-label>
+              <input matInput formControlName="cardholdername" placeholder="Enter card holder name" type="text" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="100%">
+              <mat-label>Card Number</mat-label>
+              <input matInput formControlName="cardnumber" placeholder="Enter card number" type="text" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="50%">
+              <mat-label>Expire Date</mat-label>
+              <input matInput formControlName="expiredata" placeholder="Enter expire date" type="text" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="50%">
+              <mat-label>CVV</mat-label>
+              <input matInput formControlName="cvv" placeholder="Enter cvv" type="text" >
+            </mat-form-field>
+
+            <mat-form-field  fxFlex="100%">
+              <mat-label>Address</mat-label>
+              <textarea matInput formControlName="address" placeholder="Enter Address" rows="5" cols="80"></textarea>
+            </mat-form-field>
+
+
+
+
+
+            <div class="form-button-group">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
         </mat-step>
       </mat-horizontal-stepper>
       <!-- <form #signupForm="ngForm">
