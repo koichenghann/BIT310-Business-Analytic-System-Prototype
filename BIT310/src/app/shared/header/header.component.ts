@@ -12,11 +12,15 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class HeaderComponent implements OnInit {
   constructor(public sideNavService: SideNavService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
   toggelSidenav(){
     this.sideNavService.toggle();
+    setTimeout(()=>{
+      window.dispatchEvent(
+        new Event('resize')
+      );
+    },300);
   }
 
 }

@@ -6,6 +6,10 @@ import { PostsComponent } from '../../test-area/posts/posts.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { AreaComponent } from 'src/app/test-area/widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { CardComponent } from 'src/app/test-area/widgets/card/card.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -14,12 +18,16 @@ import { HighchartsChartModule } from 'highcharts-angular';
     DefaultComponent,
     TestAreaOneComponent,
     PostsComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
     MatDividerModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatCardModule,
+    FlexLayoutModule,
+    MatIconModule
 
   ]
 })

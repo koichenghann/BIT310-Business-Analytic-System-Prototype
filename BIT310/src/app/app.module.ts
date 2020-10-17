@@ -41,7 +41,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { SideNavService } from './shared/side-nav/side-nav.service';
 // import { AreaComponent } from './test-area/widgets/area/area.component';
-// import { HighchartsChartModule } from 'highcharts-angular';
+import { HighchartsChartModule } from 'highcharts-angular';
+// import { CardComponent } from './test-area/widgets/card/card.component';
 
 
 
@@ -63,6 +64,7 @@ import { SideNavService } from './shared/side-nav/side-nav.service';
     SideNavComponent,
     BaseCardTemplateComponent,
     HeaderComponent
+    // CardComponent
     // AreaComponent
   ],
   imports: [
@@ -84,8 +86,8 @@ import { SideNavService } from './shared/side-nav/side-nav.service';
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
-    MatDividerModule
-    // HighchartsChartModule
+    MatDividerModule,
+    HighchartsChartModule
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent]
