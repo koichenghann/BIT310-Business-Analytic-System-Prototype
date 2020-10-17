@@ -42,6 +42,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { SideNavService } from './shared/side-nav/side-nav.service';
 // import { AreaComponent } from './test-area/widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { SalesReportComponent } from './charts/sales-report/sales-report.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
 
@@ -63,7 +64,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     ForecastReportComponent,
     SideNavComponent,
     BaseCardTemplateComponent,
-    HeaderComponent
+    HeaderComponent,
+    SalesReportComponent
     // CardComponent
     // AreaComponent
   ],
