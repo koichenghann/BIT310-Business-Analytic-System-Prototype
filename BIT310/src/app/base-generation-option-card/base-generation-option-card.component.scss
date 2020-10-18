@@ -1,0 +1,53 @@
+// start of top bar
+.top-bar{
+  height: 5em;
+
+  text-align: center;
+
+  overflow: hidden;
+  // padding: 0em 3em 0em 3em;
+
+  // background-color: green;
+}
+.wrapper-3-1 mat-form-field{
+  width: 8em;
+  margin-left: 1.5em;
+}
+.wrapper-3-1 span{
+  color: grey;
+}
+.to{
+  margin-left: 4em;
+}
+.wrapper-3-2 button{
+  margin-top: 0.3em;
+  margin-left: 1.5em;
+  height: 3.55em;
+}
+.wrapper-3-1{
+  height: 100%;
+  display: inline-block;
+  overflow:hidden;
+  text-align: left;
+  padding: 0;
+
+}
+.wrapper-3-2{
+  height: 100%;
+  display: inline-block;
+  box-sizing:border-box !important;
+  overflow:hidden;
+  text-align: left;
+}
+// end of top bar
+
+.custom-main-wrapper{
+  width: 100%;
+  // height: calc(100%);
+  // background-color: green;
+}
+.generation-option{
+  width: calc(100% - 8em);
+  padding: 2em 1em 1em 1em;
+  margin: 3em 3em 0 3em;
+}
