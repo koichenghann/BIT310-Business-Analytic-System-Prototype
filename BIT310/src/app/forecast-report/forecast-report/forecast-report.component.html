@@ -1,4 +1,63 @@
 <side-nav-cts>
-  <p>forecast-report works!</p>
-</side-nav-cts>
 
+
+  <div class="top-bar">
+    <div class="wrapper-1" >
+      <span>From: </span>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Year</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let year of years" [value]="year">
+            {{year}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Month</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let month of months" [value]="month">
+            {{month}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <span class="to">To: </span>
+      <mat-form-field appearance="outline">
+        <mat-label>Year</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let year of years" [value]="year">
+            {{year}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Month</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let month of months" [value]="month">
+            {{month}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+
+    <div class="wrapper-2" >
+
+      <button mat-raised-button color="primary">Generate</button>
+    </div>
+
+
+
+
+  </div>
+
+  mail sales forecast graph
+
+  small statistic card
+
+  product dis card and table
+
+</side-nav-cts>

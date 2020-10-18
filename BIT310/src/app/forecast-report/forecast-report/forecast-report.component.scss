@@ -1,0 +1,44 @@
+.top-bar{
+  height: 5em;
+  // background-color: green;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  padding: 4em 3em 4em 3em;
+}
+.wrapper-1 mat-form-field{
+  width: 8em;
+  margin-left: 1.5em;
+}
+.wrapper-1 span{
+  color: grey;
+}
+.to{
+  margin-left: 4em;
+}
+.wrapper-2 button{
+  margin-top: 0.3em;
+  margin-left: 1.5em;
+  height: 3.55em;
+}
+.wrapper-1{
+  // background-color: #adadad;
+  // width: calc(80%);
+  height: 100%;
+  display: inline-block;
+  // box-sizing:border-box !important;
+  overflow:hidden;
+  text-align: left;
+  padding: 0;
+
+}
+.wrapper-2{
+  // background-color: #8f8f8f;
+  // width: calc(20%);
+  height: 100%;
+  display: inline-block;
+  box-sizing:border-box !important;
+  overflow:hidden;
+  text-align: left;
+
+}
