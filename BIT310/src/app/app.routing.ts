@@ -17,7 +17,7 @@ import { PostsComponent } from './test-area/posts/posts.component';
 const APP_ROUTES: Routes = [
   {path:'', redirectTo: '/dashboard', pathMatch: 'full'},
   {path:'login', component: LoginComponent},
-  {path:'singup', component: SignupComponent},
+  {path:'signup', component: SignupComponent},
   {path:'dashboard', component: DashboardComponent},
   {path:'product-category-sales-report', component: ProductCategorySalesReportComponent},
   {path:'monthly-sales-report', component: MonthlySalesReportComponent},
