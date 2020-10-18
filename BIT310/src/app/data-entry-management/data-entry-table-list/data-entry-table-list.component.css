@@ -1,9 +1,21 @@
+
+.custom-delete-button {
+  background:var(--customButtonBackgroundColor) !important; /*#40c4de;*/
+  color:'#ffffff';
+}
+.custom-view-button {
+  background:var(--customButtonBackgroundColor) !important; /*#40c4de;*/
+  color:'#ffffff';
+}
+
+
+
 .card-form{
   margin:1em;
   display: block;
 }
 .card-form-header{
- background-color:#102b54;
+ background-color: #102b54;
   /*background-image: url("/assets/image/Teal_gradient_background_3.jpg");*/
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;
@@ -13,31 +25,31 @@
 
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
-    color:#40c4de!important;
+    color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
  }
 
  ::ng-deep.mat-form-field-outline {
   /*change color of underline*/
-    color:#40c4de !important;
+    color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
 }
 
 ::ng-deep.mat-form-field-underline {
   /*change color of underline*/
-    color:#40c4de !important;
+    color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
 }
 
 ::ng-deep.mat-form-field-ripple {
  /*change color of underline when focused*/
-  background-color: #40c4de !important;;
-  color:#40c4de !important;
+  background-color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
+  color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
 }
 
 ::ng-deep.mat-select-panel{
-  color: #40c4de !important;
+  color:  var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
 }
 
 ::ng-deep.mat-select-value-text {
-  color: #40c4de !important;
+  color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
 }
 
 
@@ -107,7 +119,7 @@
   display: block;
 }
 .mat_card_header{
-  background-color: #40c4de;
+  background-color:  var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
   /*background-image: url("/assets/image/Teal_gradient_background_3.jpg");*/
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;

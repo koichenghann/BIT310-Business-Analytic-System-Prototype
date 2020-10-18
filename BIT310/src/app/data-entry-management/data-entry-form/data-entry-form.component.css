@@ -33,7 +33,7 @@ mat-card{
 }
 
 mat-card-header{
-  background-color: #40c4de;
+  background-color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
   background-image: url("/assets/image/Teal_gradient_background_3.jpg");
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;
@@ -73,7 +73,7 @@ mat-form-field{
   margin-bottom: 1em;
 } */
 .mat-raised-button{
-  background-color: #40c9de !important; /*#40c4de*/
+  background-color: var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
   color: white !important;
   width: 7em;
 }

@@ -18,7 +18,7 @@ mat-card{
 }
 mat-card-header{
   // background-color: grey;
-  background-color: $theme-color;
+  background-color: var(--customHeaderBackgroundColor);
   // background-image: url("/assets/image/Teal_gradient_background_3.jpg");
   border-radius: 4px 4px 0 0;
   padding: 4em 0 2.4em 1em;
@@ -44,7 +44,7 @@ mat-form-field{
 .form-button-group button{
   width: 100%;
   max-width: 100% !important;
-  background-color: $theme-color !important;
+  background-color: var(--customButtonBackgroundColor) !important;
 }
 a{
    color: white;

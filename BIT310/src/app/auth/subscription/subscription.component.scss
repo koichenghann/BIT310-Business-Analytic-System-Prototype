@@ -18,7 +18,7 @@ mat-card{
   display: block;
 }
 mat-card-header{
-  background-color: #40c4de;
+  background-color: var(--customHeaderBackgroundColor);
   background-image: url("/assets/image/Teal_gradient_background_3.jpg");
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;

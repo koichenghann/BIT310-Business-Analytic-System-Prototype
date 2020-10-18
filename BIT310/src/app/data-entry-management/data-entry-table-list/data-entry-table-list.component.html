@@ -67,13 +67,12 @@
               <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef> Action </th>
                 <td mat-cell *matCellDef="let data" >
-                  <button class="btn_action"  routerLink='tester-update-test/details' mat-raised-button
-                     [ngStyle]="{background:'#40c4de' , color:'#ffffff'}">View</button>
+                  <button class="btn_action custom-view-button"  routerLink='tester-update-test/details' mat-raised-button>View</button>
 
                 <!--  <button mat-raised-button
                     [ngStyle]="{background:'#439F9E' , color:'#ffffff'}">Delete</button>-->
 
-                    <button mat-mini-fab [ngStyle]="{background:'#40c4de' , color:'#ffffff'}">
+                    <button mat-mini-fab class="custom-delete-button"> <!-- [ngStyle]="{background:'#40c4de' , color:'#ffffff'}"> -->
                       <mat-icon>delete</mat-icon>
                     </button>
                 </td>
