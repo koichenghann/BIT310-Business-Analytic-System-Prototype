@@ -89,35 +89,54 @@
   font-style: italic;
 }
 
+
+
+
+
+
+
 .wrapper{
-  /* background-color: #439F9E; */
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 6em);
   max-height: 100%;
-  max-width: 100%;
-  padding: 5em 3em 3em 3em;
+  width: calc(100%);
+  padding: 3em 3em 3em 3em !important;
+  /* background-color: green; */
+  overflow: hidden;
+}
+.wrapper-2{
+  height: 100%;
+  width: calc(100%);
+  padding: 3em 3em 3em 3em !important;
+  /* background-color: green; */
 }
 
-#noEntryMessage{
-  width: 100%;
-  text-align: center;
-  margin: 3em auto;
+
+mat-card{
+  /* margin: 0 auto; */
+  margin-top: 0;
+  padding: 0;
+  width: calc(100% - 6em);
+  /* height: 100%; */
+  display: block;
 }
-#noEntryMessage a{
-  color: blue;
+.mat_card_table_1{
+  height: calc(35%);
+  overflow: hidden;
 }
-#noEntryMessage a:hover{
-  text-decoration: underline;
+.mat_card_table_2{
+  height: calc(65% - 3em);
+  margin-top: 3em;
+  overflow: hidden;
 }
-.mat_card_table{
+
+
+/* .mat_card_table{
   margin: 1em auto;
-  /* margin: 10% auto; */
   padding: 0;
   width: 90%;
   max-width: 60em;
-  /* max-height: 100%; */
   display: block;
-}
+} */
 .mat_card_header{
   background-color:  var(--customHeaderBackgroundColor) !important; /*#40c4de;*/
   /*background-image: url("/assets/image/Teal_gradient_background_3.jpg");*/
@@ -172,6 +191,8 @@ mat-card-subtitle{
 }
 mat-card-content{
   padding: 0;
+  height: 100%;
+  overflow: scroll;
 }
 
 
@@ -180,12 +201,24 @@ mat-card-content{
 }
 
 .table-container {
-  height: 400px;
-    overflow: auto;
+  height: 100%;
+  overflow: auto;
+  /* background-color: green; */
+  border-radius: 0 0 4px 4px;
+  }
+.table-container-2 {
+  height: 100%;
+  overflow: auto;
+  /* background-color: green; */
+  border-radius: 0 0 4px 4px;
   }
   table {
   width: 100%;
   }
+th{
+  height: 1em !important;
+}
+
 
 /* css from google, change it later */
 /**/
