@@ -1,4 +1,68 @@
 <side-nav-cts>
-  <p>detailed-report works!</p>
+<main class="main_content">
+
+
+  <h1 mat-h1 mat-headline>Detailed graphical report</h1>
+  <mat-card>
+    <mat-card-header>
+
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="content" fxLayout="row wrap">
+        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%">
+
+          <mat-card class="first_row_1">
+            <mat-card-header>
+              <h3>Product Sales Distribution Chart</h3>
+            </mat-card-header>
+
+            <mat-card-content>
+              <app-product-sales-distribution-report-chart></app-product-sales-distribution-report-chart>
+            </mat-card-content>
+          </mat-card>
+
+
+
+        </div>
+
+        <div class="first_row_2" fxFlex="45%" fxFlex.xs="100%" fxFlex.sm="45%">
+          <p style="text-align:justify">Business organizations, establishments, companies, and other entities gather or collect data
+            from different stakeholders so that these information can be usable for studies and researches
+            necessary for the continuous and sustainable growth of the business. Firsthand information from
+            customers, other businesses, suppliers, systems, and related report results can give the business
+            an idea about trends, activity impacts, action plan results, and potential strategies and tactics
+            for successful future operations.</p>
+
+            <h5>Product Sales Distribution Report</h5>
+            <table mat-table [dataSource]="dataSourceInfo" class="mat-elevation-z8">
+
+              <!--- Note that these columns can be defined in any order.
+                    The actual rendered columns are set as a property on the row definition" -->
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="product">
+                <th mat-header-cell *matHeaderCellDef> Product </th>
+                <td mat-cell *matCellDef="let element"> {{element.product}} </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="salesDistribution">
+                <th mat-header-cell *matHeaderCellDef> Sales Distribution </th>
+                <td mat-cell *matCellDef="let element"> {{element.salesDistribution}} </td>
+              </ng-container>
+
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumnsInfo"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumnsInfo;"></tr>
+            </table>
+        </div>
+      </div>
+
+
+    </mat-card-content>
+  </mat-card>
+
+</main>
 </side-nav-cts>
 
