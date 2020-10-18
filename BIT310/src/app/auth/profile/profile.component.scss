@@ -5,6 +5,8 @@
   height: 7em;
   width: 100%;
   overflow: hidden;
+  margin-top: 0.3em !important;
+  margin-bottom: 2.5em !important;
 }
 .green-left{
   width: 60%;
@@ -13,33 +15,40 @@
   box-sizing:border-box !important;
   overflow:hidden;
   padding: 1em;
-  background-color: lightblue;
-}
-.green-middle{
-  width: 20%;
-  height: 100%;
-  display: inline-block;
-  box-sizing:border-box !important;
-  overflow:hidden;
-  background-color: lightgrey;
+  // background-color: lightblue;
 }
 .green-right{
-  width: 20%;
   height: 100%;
   display: inline-block;
   box-sizing:border-box !important;
   overflow:hidden;
-  background-color: teal;
+  padding: 1.3em;
+  width: 8em;
+  // background-color: lightblue;
 }
-.green-header{
+.green-left .green-header{
   color: green;
   font-size: 2em;
   padding-bottom: 0.3em;
 }
-.green-description{
+.green-left .green-description{
   color: green;
-  // font-size: 2em;
 }
+
+.green-right .green-header{
+  color: green;
+  padding-bottom: 0.8em;
+}
+.green-right .green-description{
+  color: green;
+  font-size: 3em;
+}
+
+.option{
+  margin: 0.1em 0.5em 1em 0.5em;
+  // background-color: lightgrey;
+}
+
 
 
 

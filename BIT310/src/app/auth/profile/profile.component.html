@@ -6,34 +6,33 @@
         <div fxFlex></div>
 
         <div class="header-button-group">
-           <a routerLink="/test-kit-table/form">
-             Edit
+           <a (click)="editProfile = !editProfile">
+             {{editProfile ?  'Save' : 'Edit'}}
              <!-- <span class="material-icons">add</span> -->
            </a>
         </div>
       </mat-card-header>
-
       <mat-card-content>
         <form fxLayout="row wrap" fxLayoutGap="20px grid">
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>Lastname</mat-label>
-            <input matInput  placeholder="Enter firstname" type="text" value="Jonathan" disabled>
+            <input matInput  placeholder="Enter firstname" type="text" value="Jonathan" [disabled]='!editProfile'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>Firstname</mat-label>
-            <input matInput  placeholder="Enter lastname" type="text" value="Wick" disabled>
+            <input matInput  placeholder="Enter lastname" type="text" value="Wick" [disabled]='!editProfile'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>E-mail</mat-label>
-            <input matInput  placeholder="Enter e-mail" type="text" value="janathan@continental.com" disabled>
+            <input matInput  placeholder="Enter e-mail" type="text" value="janathan@continental.com" [disabled]='!editProfile'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>Username</mat-label>
-            <input matInput  placeholder="Enter username" type="text" value="johnwick-123" disabled>
+            <input matInput  placeholder="Enter username" type="text" value="johnwick-123" [disabled]='!editProfile'>
           </mat-form-field>
 
           <!-- <mat-form-field  fxFlex="100%" appearance="outline">
@@ -55,7 +54,7 @@
     </mat-card>
   </div>
 
-<!-- User Profile Card -->
+<!-- Subscription Card -->
   <div class="wrapper-card">
     <mat-card class="form-card mat-elevation-z10">
       <mat-card-header>
@@ -63,14 +62,15 @@
         <div fxFlex></div>
 
         <div class="header-button-group">
-           <a routerLink="/test-kit-table/form">
+           <!-- <a routerLink="/test-kit-table/form">
              Edit
-             <!-- <span class="material-icons">add</span> -->
-           </a>
+             <span class="material-icons">add</span>
+           </a> -->
         </div>
       </mat-card-header>
 
       <mat-card-content>
+        <span style="color: grey;">Current Plan:</span>
         <div class="subscription-green-div">
           <div class="green-left">
             <div class="green-header">
@@ -81,23 +81,47 @@
               of the business analytic solution, this is sufficient for first
               time user.
             </div>
-
-
           </div>
-          <div class="green-middle"></div>
+          <div fxFlex></div>
           <div class="green-right">
-
+            <div class="day-left">
+              <div class="green-header">
+                Days left:
+              </div>
+              <div class="green-description">
+                312
+              </div>
+            </div>
           </div>
         </div>
-        green div of current Plan <br>
-        toggle auto renew <br>
-        toggle send reminder email
+
+<mat-divider></mat-divider>
+<br>
+        <span style="color: grey;" >Option:</span>
+        <div class="option">
+          <div>
+            Auto Renew
+          </div>
+          <div fxFlex></div>
+          <div>
+            <mat-slide-toggle color="primary" ></mat-slide-toggle>
+          </div>
+        </div>
+        <div class="option">
+          <div>
+            Send reminder email
+          </div>
+          <div fxFlex></div>
+          <div>
+            <mat-slide-toggle color="primary" checked></mat-slide-toggle>
+          </div>
+        </div>
       </mat-card-content>
     </mat-card>
   </div>
 
 
-<!-- Subscription Plan  Card -->
+<!-- Payment  Card -->
   <div class="wrapper-card">
     <mat-card class="form-card mat-elevation-z10">
       <mat-card-header>
@@ -105,43 +129,40 @@
         <div fxFlex></div>
 
         <div class="header-button-group">
-           <a routerLink="/test-kit-table/form">
-             Edit
+           <a (click)="editPayment = !editPayment">
+             {{editPayment ? 'Save' : 'Edit'}}
              <!-- <span class="material-icons">add</span> -->
            </a>
         </div>
       </mat-card-header>
 
-
-
-<!-- Payment Method Card -->
       <mat-card-content>
         <form fxLayout="row wrap" fxLayoutGap="20px grid">
           <ng-template matStepLabel>Payment</ng-template>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>Card Holder Name</mat-label>
-            <input matInput  placeholder="Enter card holder name" type="text" value="JONATHAN WICK" disabled>
+            <input matInput  placeholder="Enter card holder name" type="text" value="JONATHAN WICK" [disabled]='!editPayment'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>Card Number</mat-label>
-            <input matInput  placeholder="Enter card number" type="text" value="1***-****-****-3412" disabled>
+            <input matInput  placeholder="Enter card number" type="text" value="1***-****-****-3412" [disabled]='!editPayment'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>Expire Date</mat-label>
-            <input matInput  placeholder="Enter expire date" type="text" value="04/24" disabled>
+            <input matInput  placeholder="Enter expire date" type="text" value="04/24" [disabled]='!editPayment'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="50%" appearance="outline">
             <mat-label>CVV</mat-label>
-            <input matInput  placeholder="Enter cvv" type="text" value="**3" disabled>
+            <input matInput  placeholder="Enter cvv" type="text" value="**3" [disabled]='!editPayment'>
           </mat-form-field>
 
           <mat-form-field  fxFlex="100%" appearance="outline">
             <mat-label>Address</mat-label>
-            <textarea matInput  placeholder="Enter Address" rows="5" cols="80" value="Wick" disabled></textarea>
+            <textarea matInput  placeholder="Enter Address" rows="5" cols="80" value="Wick" [disabled]='!editPayment'></textarea>
           </mat-form-field>
 
 

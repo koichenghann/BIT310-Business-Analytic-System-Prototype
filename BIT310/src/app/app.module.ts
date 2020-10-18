@@ -52,6 +52,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 import { SideNavService } from './shared/side-nav/side-nav.service';
@@ -67,6 +69,7 @@ import { ForecastProductSalesChartComponent } from './forecast-report/forecast-p
 import { BaseGenerationOptionCardComponent } from './base-generation-option-card/base-generation-option-card.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { SubscriptionComponent } from './auth/subscription/subscription.component';
+
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
@@ -103,6 +106,7 @@ import { SubscriptionComponent } from './auth/subscription/subscription.componen
     BaseGenerationOptionCardComponent,
     ProfileComponent,
     SubscriptionComponent,
+    
 
     // PieComponent
     // CardComponent
@@ -136,6 +140,8 @@ import { SubscriptionComponent } from './auth/subscription/subscription.componen
     MatCheckboxModule,
     MatExpansionModule,
     MatDividerModule,
+    MatSlideToggleModule,
+    MatDialogModule,
 
 
     HighchartsChartModule
