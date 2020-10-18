@@ -15,19 +15,21 @@ mat-nav-list a:hover{
 }
 .sidenav {
   width: 16rem;
-  background-color: #102b54;
+  background-color: #40c4de;
+  text-shadow: 1px 1px 2px grey;
 
 }
 
 .sidenav .mat-toolbar {
   background: inherit;
-  background-color:#102b54;
+  background-color:#40c4de;
+  text-shadow: 1px 1px 2px grey;
 
 }
 
 .toolbar_2 .mat-toolbar{
   background: inherit;
-  background-color:#102b54;
+  background-color:#40c4de;
   display: none;
 }
 
@@ -35,7 +37,8 @@ mat-nav-list a:hover{
   position: absolute;
   top: 0;
   z-index: 1;
-  background-color: #102b54;
+  background-color: #40c4de;
+  text-shadow: 1px 1px 2px pink;
 
 }
 
@@ -75,8 +78,8 @@ mat-nav-list a:hover{
 
 
 .active-link {
-  background-color: #2363c4;
+  background-color: #409fde;
 }
 .active-link:hover {
-  background-color: #2363c4;
+  background-color: #409fde;
 }

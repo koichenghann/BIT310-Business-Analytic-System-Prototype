@@ -3,7 +3,7 @@
   display: block;
 }
 .card-form-header{
- background-color: #439F9E;
+ background-color:#102b54;
   /*background-image: url("/assets/image/Teal_gradient_background_3.jpg");*/
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;
@@ -13,31 +13,31 @@
 
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
-    color:#439F9E!important;
+    color:#40c4de!important;
  }
 
  ::ng-deep.mat-form-field-outline {
   /*change color of underline*/
-    color:#439F9E !important;
+    color:#40c4de !important;
 }
 
 ::ng-deep.mat-form-field-underline {
   /*change color of underline*/
-    color:#439F9E !important;
+    color:#40c4de !important;
 }
 
 ::ng-deep.mat-form-field-ripple {
  /*change color of underline when focused*/
-  background-color: #439F9E !important;;
-  color:#439F9E !important;
+  background-color: #40c4de !important;;
+  color:#40c4de !important;
 }
 
 ::ng-deep.mat-select-panel{
-  color: #439F9E !important;
+  color: #40c4de !important;
 }
 
 ::ng-deep.mat-select-value-text {
-  color: #439F9E !important;
+  color: #40c4de !important;
 }
 
 
@@ -107,7 +107,7 @@
   display: block;
 }
 .mat_card_header{
-  background-color: #439F9E;
+  background-color: #40c4de;
   /*background-image: url("/assets/image/Teal_gradient_background_3.jpg");*/
   border-radius: 4px 4px 0 0;
   padding: 1em 0 0.2em 1em;
@@ -132,7 +132,7 @@ mat-card-subtitle{
   color: white;
 }
 .header-button-group a:hover{
-  color: black;
+  color: whitesmoke;
 }
 .searchbar{
   margin-right: -2em;
@@ -140,7 +140,7 @@ mat-card-subtitle{
   padding-top: 0em;
 }
 .searchbar input{
-  background-color: green;
+  background-color: #102b54;
   background: none;
   border: solid 1px white;
   padding: 5px;
