@@ -35,7 +35,7 @@ export class ProductSalesDistributionReportComponent implements OnInit {
           verticalAlign: 'top',
           layout: 'vertical',
           x: -50,
-          y: 60
+          y: 45
         },
         accessibility: {
             point: {

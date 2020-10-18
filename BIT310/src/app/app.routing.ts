@@ -9,6 +9,8 @@ import { DetailedReportComponent } from './detailed-report/detailed-report/detai
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
 import { TestAreaOneComponent } from './test-area/test-area-one/test-area-one.component';
 import { PostsComponent } from './test-area/posts/posts.component';
+import { ProfileComponent } from './auth/profile/profile.component';
+import { SubscriptionComponent } from './auth/subscription/subscription.component';
 
 
 
@@ -23,6 +25,8 @@ const APP_ROUTES: Routes = [
   {path:'data-entry-management', component: DataEntryManagementComponent},
   {path:'detailed-report', component: DetailedReportComponent},
   {path:'forecast-report', component: ForecastReportComponent},
+  {path:'profile', component: ProfileComponent},
+  {path:'subscription', component: SubscriptionComponent},
   {path:'test-area-1', component: TestAreaOneComponent},
   {path:'posts', component: PostsComponent}
 

@@ -64,6 +64,8 @@ import { ProductSingleCategorySalesReportChartComponent } from './charts/product
 import { ForecastSalesChartComponent } from './forecast-report/forecast-sales-chart/forecast-sales-chart.component';
 import { ForecastProductSalesChartComponent } from './forecast-report/forecast-product-sales-chart/forecast-product-sales-chart.component';
 import { BaseGenerationOptionCardComponent } from './base-generation-option-card/base-generation-option-card.component';
+import { ProfileComponent } from './auth/profile/profile.component';
+import { SubscriptionComponent } from './auth/subscription/subscription.component';
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
@@ -97,6 +99,8 @@ import { BaseGenerationOptionCardComponent } from './base-generation-option-card
     ForecastSalesChartComponent,
     ForecastProductSalesChartComponent,
     BaseGenerationOptionCardComponent,
+    ProfileComponent,
+    SubscriptionComponent,
 
     // PieComponent
     // CardComponent

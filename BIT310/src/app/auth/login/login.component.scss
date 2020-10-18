@@ -1,5 +1,6 @@
 $theme-color: #439F9E;
 
+
 .card-wrapper{
   // background-color: #439F9E;/*#A5C5C3*/
   height: 100%;
@@ -15,8 +16,6 @@ mat-card{
   max-width: 35em;
   display: block;
 }
-
-
 mat-card-header{
   // background-color: grey;
   background-color: $theme-color;
@@ -35,11 +34,9 @@ mat-card-subtitle{
 mat-card-content{
   padding: 3em 2em 2em 2em;
 }
-
 mat-form-field{
   width: 100%;
 }
-
 .form-button-group{
   text-align: center;
   padding-top: 0.2em !important;

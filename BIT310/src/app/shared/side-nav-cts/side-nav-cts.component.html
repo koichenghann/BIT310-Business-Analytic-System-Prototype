@@ -5,6 +5,7 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false">
     <mat-toolbar><span class="logo_icon"><i class="far fa-chart-bar"></i> StaticMach</span> </mat-toolbar>
+<mat-divider></mat-divider>
     <mat-nav-list>
 
 
@@ -34,11 +35,21 @@
         routerLink="/forecast-report"
         routerLinkActive="active-link"><i class="fas fa-chart-line"></i> &nbsp;&nbsp; Forecast Report</a>
 
+<mat-divider></mat-divider>
+      <a mat-list-item
+        routerLink="/profile"
+        routerLinkActive="active-link"><i class="fas fa-chart-line"></i> &nbsp;&nbsp; Profile</a>
+
+      <!-- <a mat-list-item
+        routerLink="/subscription"
+        routerLinkActive="active-link"><i class="fas fa-chart-line"></i> &nbsp;&nbsp; Subscription</a> -->
+<!-- <mat-divider></mat-divider> -->
+
       <!---
       <a mat-list-item [routerLink]="route4" routerLinkActive="active-link"><i class="fas fa-calendar-check"></i> &nbsp; {{ list_item_4 }}</a>
       <a mat-list-item [routerLink]="route5" routerLinkActive="active-link"><i class="fas fa-plus-circle"></i> &nbsp; {{ list_item_5 }}</a>
     -->
-      <a (click)="logout()" routerLink="/home" routerLinkActive="active-link" mat-list-item href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; {{ list_item_6 }}</a>
+      <a (click)="logout()" routerLink="/login" routerLinkActive="active-link" mat-list-item href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; {{ list_item_6 }}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
