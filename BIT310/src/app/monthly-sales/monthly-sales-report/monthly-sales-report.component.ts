@@ -24,18 +24,12 @@ export class MonthlySalesReportComponent implements OnInit {
     'December'
   ];
   years = [
-    '2015',
-    '2016',
-    '2017',
-    '2018',
     '2019',
     '2020'
   ]
   // year = "2020";
 
-  toppings = new FormControl();
 
-  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   constructor() { }
 
@@ -43,7 +37,7 @@ export class MonthlySalesReportComponent implements OnInit {
 
     for (var year of this.years) {
       for (var month of this.months) {
-        this.datasource.push({year: year, month: month});
+        this.datasource.push({year: year, month: month, open: false});
       }
     }
 

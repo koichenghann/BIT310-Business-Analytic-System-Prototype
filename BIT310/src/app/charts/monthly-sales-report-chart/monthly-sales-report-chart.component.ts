@@ -24,7 +24,8 @@ export class MonthlySalesReportChartComponent implements OnInit {
 
         },
         title: {
-            text: 'Monthly Sales Report of ' + this.month + ' ' + this.year
+            text: null
+            // text: 'Monthly Sales Report of ' + this.month + ' ' + this.year
         },
         subtitle: {
             text: null
@@ -40,7 +41,7 @@ export class MonthlySalesReportChartComponent implements OnInit {
           enabled: false
         },
         exporting: {
-          enabled: true
+          enabled: false
         },
         series: [{
           data: [100, 200, 300, 250, 50, 350, 150, 70, 230, 50, 350, 150, 70, 230, 200, 300, 250, 50, 100, 200, 300, 250, 50, 350, 150, 70, 230, 50, 350, 150, 70]

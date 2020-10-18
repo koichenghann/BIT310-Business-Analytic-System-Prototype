@@ -3,11 +3,11 @@ import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 
 @Component({
-  selector: 'app-product-sales-distribution-report-chart',
-  templateUrl: './product-sales-distribution-report.component.html',
-  styleUrls: ['./product-sales-distribution-report.component.scss']
+  selector: 'app-product-single-category-sales-report-chart',
+  templateUrl: './product-single-category-sales-report-chart.component.html',
+  styleUrls: ['./product-single-category-sales-report-chart.component.scss']
 })
-export class ProductSalesDistributionReportComponent implements OnInit {
+export class ProductSingleCategorySalesReportChartComponent implements OnInit {
   chartOptions: {};
   Highcharts = Highcharts;
 
@@ -20,8 +20,10 @@ export class ProductSalesDistributionReportComponent implements OnInit {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: '50%',
-            marginBottom: -10,
+            height: '70%',
+            marginTop: 30
+
+
         },
         title: {
             text: null
@@ -30,12 +32,12 @@ export class ProductSalesDistributionReportComponent implements OnInit {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
         legend: {
-          enabled: true,
-          align: 'right',
-          verticalAlign: 'top',
-          layout: 'vertical',
-          x: -50,
-          y: 60
+            enabled: true,
+            align: 'right',
+            verticalAlign: 'top',
+            layout: 'vertical',
+            x: -20,
+            y: 65
         },
         accessibility: {
             point: {
@@ -60,38 +62,38 @@ export class ProductSalesDistributionReportComponent implements OnInit {
           enabled: false
         },
         series: [{
-            name: 'Brands',
+            name: 'Product',
             colorByPoint: true,
             data: [{
-                name: 'Food',
+                name: 'Chair 1',
                 y: 61.41,
 
             }, {
-                name: 'Tools',
+                name: 'Table 1',
                 y: 11.84
             }, {
-                name: 'Gadget',
+                name: 'Table 2',
                 y: 10.85
             }, {
-                name: 'Electronics',
+                name: 'Sofa 1',
                 y: 4.67
             }, {
-                name: 'Lifestyle',
+                name: 'Shelf 1',
                 y: 4.18
             }, {
-                name: 'Furtniture',
+                name: 'Desk 1',
                 y: 1.64
             },{
-                name: 'Toys',
+                name: 'Shelf 2',
                 y: 1.64
             },{
-                name: 'Cleaning',
+                name: 'Shelf 3',
                 y: 1.64
             },{
-                name: 'Vehicle',
+                name: 'Carpet 1',
                 y: 1.64
             },{
-                name: 'Stationary',
+                name: 'Shelf 4',
                 y: 1.64
             }]
         }]

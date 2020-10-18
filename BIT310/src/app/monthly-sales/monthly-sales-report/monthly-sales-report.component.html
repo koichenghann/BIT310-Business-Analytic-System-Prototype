@@ -32,13 +32,14 @@
   <div class="wrapper">
     <mat-accordion>
 
-      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let report of datasource">
+      <mat-expansion-panel (opened)="report.open = true" (closed)="report.open = false" *ngFor="let report of datasource">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            {{report.year}} - {{report.month}}
+            <!-- {{report.year}} - {{report.month}} -->
+            {{report.open ? '' : report.year + ' - ' + report.month}}
           </mat-panel-title>
           <mat-panel-description>
-            <!-- Monthly sales report -->
+            {{report.open ? 'Monthly Sales Report of ' + report.month + ' ' + report.year : ''}}
           </mat-panel-description>
         </mat-expansion-panel-header>
 

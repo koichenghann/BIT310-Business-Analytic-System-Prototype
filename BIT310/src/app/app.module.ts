@@ -59,6 +59,7 @@ import { SalesReportComponent } from './charts/sales-report/sales-report.compone
 import { ProductSalesDistributionReportComponent } from './charts/product-sales-distribution-report/product-sales-distribution-report.component';
 import { CardAreaChartComponent } from './charts/card-area-chart/card-area-chart.component';
 import { MonthlySalesReportChartComponent } from './charts/monthly-sales-report-chart/monthly-sales-report-chart.component';
+import { ProductSingleCategorySalesReportChartComponent } from './charts/product-single-category-sales-report-chart/product-single-category-sales-report-chart.component';
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
@@ -87,6 +88,7 @@ import { MonthlySalesReportChartComponent } from './charts/monthly-sales-report-
     SideNavCtsComponent,
     CardAreaChartComponent,
     MonthlySalesReportChartComponent,
+    ProductSingleCategorySalesReportChartComponent,
 
     // PieComponent
     // CardComponent
