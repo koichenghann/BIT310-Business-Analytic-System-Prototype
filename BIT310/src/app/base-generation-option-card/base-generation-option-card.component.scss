@@ -1,4 +1,8 @@
 // start of top bar
+.custom-generate-button{
+  // background-color: var(--customButtonBackgroundColor) !important;
+}
+
 .top-bar{
   height: 5em;
 
@@ -86,6 +90,7 @@ mat-card-title{
   /* font-size: 2.5em !important; */
   color: white; /*#1200b5;*/ /*#006e7a*/
 }
+
 
 // mat-card-content{
 //   padding: 3em 2em 3em 0;
