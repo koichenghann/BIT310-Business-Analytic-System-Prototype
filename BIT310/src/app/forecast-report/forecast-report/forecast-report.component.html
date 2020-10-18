@@ -1,4 +1,5 @@
 <side-nav-cts>
+    <app-forecast-product-sales-chart></app-forecast-product-sales-chart>
   <app-base-generation-option-card></app-base-generation-option-card>
 
   <div class="custom-main-wrapper">
@@ -6,10 +7,23 @@
 
 
     <app-forecast-sales-chart></app-forecast-sales-chart>
-    <br>
-    small statistic card
-    <br>
-    product dis card and table
+
+    <div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap="3em" class="stats-cards-2">
+      <mat-card  fxFlex="25" class="mat-elevation-z3">
+          <app-card-area-chart label="Sales" total="18k" percentage="50" ></app-card-area-chart>
+      </mat-card>
+      <mat-card  fxFlex="25" class="mat-elevation-z3">
+          <app-card-area-chart label="Revenue" total="18k" percentage="50" ></app-card-area-chart>
+      </mat-card>
+      <mat-card  fxFlex="25" class="mat-elevation-z3">
+          <app-card-area-chart label="New Customer" total="18k" percentage="50" ></app-card-area-chart>
+      </mat-card>
+      <mat-card  fxFlex="25" class="mat-elevation-z3">
+          <app-card-area-chart label="Returning Customer" total="18k" percentage="50" ></app-card-area-chart>
+      </mat-card>
+    </div>
+
+
   </div>
 
 
