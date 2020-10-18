@@ -49,6 +49,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 import { SideNavService } from './shared/side-nav/side-nav.service';
@@ -56,6 +57,8 @@ import { SideNavService } from './shared/side-nav/side-nav.service';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SalesReportComponent } from './charts/sales-report/sales-report.component';
 import { ProductSalesDistributionReportComponent } from './charts/product-sales-distribution-report/product-sales-distribution-report.component';
+import { CardAreaChartComponent } from './charts/card-area-chart/card-area-chart.component';
+import { MonthlySalesReportChartComponent } from './charts/monthly-sales-report-chart/monthly-sales-report-chart.component';
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
@@ -82,6 +85,8 @@ import { ProductSalesDistributionReportComponent } from './charts/product-sales-
     SalesReportComponent,
     ProductSalesDistributionReportComponent,
     SideNavCtsComponent,
+    CardAreaChartComponent,
+    MonthlySalesReportChartComponent,
 
     // PieComponent
     // CardComponent
@@ -113,6 +118,8 @@ import { ProductSalesDistributionReportComponent } from './charts/product-sales-
     MatPaginatorModule,
     MatTableModule,
     MatCheckboxModule,
+    MatExpansionModule,
+    MatDividerModule,
 
 
     HighchartsChartModule

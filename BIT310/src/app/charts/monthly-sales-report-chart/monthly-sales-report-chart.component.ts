@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 
 @Component({
-  selector: 'app-sales-report-chart',
-  templateUrl: './sales-report.component.html',
-  styleUrls: ['./sales-report.component.scss']
+  selector: 'app-monthly-sales-report-chart',
+  templateUrl: './monthly-sales-report-chart.component.html',
+  styleUrls: ['./monthly-sales-report-chart.component.scss']
 })
-export class SalesReportComponent implements OnInit {
-
+export class MonthlySalesReportChartComponent implements OnInit {
+  @Input() month: string;
+  @Input() year: string;
   chartOptions: {};
   Highcharts = Highcharts;
 
@@ -19,11 +20,11 @@ export class SalesReportComponent implements OnInit {
     this.chartOptions = {
         chart: {
             type: 'area',
-            height: '25%'
+            height: '30%'
 
         },
         title: {
-            text: null
+            text: 'Monthly Sales Report of ' + this.month + ' ' + this.year
         },
         subtitle: {
             text: null
@@ -55,5 +56,4 @@ export class SalesReportComponent implements OnInit {
     },300);
 
   }
-
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-monthly-sales-report',
@@ -6,10 +7,48 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./monthly-sales-report.component.scss']
 })
 export class MonthlySalesReportComponent implements OnInit {
+  panelOpenState = false;
+  datasource = [];
+  months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+  years = [
+    '2015',
+    '2016',
+    '2017',
+    '2018',
+    '2019',
+    '2020'
+  ]
+  // year = "2020";
+
+  toppings = new FormControl();
+
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   constructor() { }
 
   ngOnInit(): void {
+
+    for (var year of this.years) {
+      for (var month of this.months) {
+        this.datasource.push({year: year, month: month});
+      }
+    }
+
+
+    this.datasource.reverse();
   }
 
 }

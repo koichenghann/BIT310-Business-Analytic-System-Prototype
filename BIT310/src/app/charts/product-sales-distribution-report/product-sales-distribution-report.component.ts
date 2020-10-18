@@ -20,13 +20,17 @@ export class ProductSalesDistributionReportComponent implements OnInit {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: '50%'
+            height: '47%',
+            marginBottom: -10,
         },
         title: {
             text: null
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        legend: {
+          enabled: false
         },
         accessibility: {
             point: {
@@ -55,8 +59,7 @@ export class ProductSalesDistributionReportComponent implements OnInit {
             data: [{
                 name: 'Food',
                 y: 61.41,
-                sliced: true,
-                selected: true
+
             }, {
                 name: 'Tools',
                 y: 11.84

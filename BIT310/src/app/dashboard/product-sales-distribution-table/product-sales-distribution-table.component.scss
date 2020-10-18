@@ -33,8 +33,8 @@ mat-card-title{
   color: white; /*#1200b5;*/ /*#006e7a*/
 }
 mat-card-content{
-  padding: 0;
-  overflow: hidden;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 .header-button-group{
