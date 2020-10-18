@@ -24,20 +24,29 @@
 
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
               <mat-label>File Type</mat-label>
-              <input matInput placeholder="Placeholder" type="text" required>
-              <mat-error>Test Centre ID officer is required</mat-error>
+              <mat-select>
+                <mat-option value="1"><i class="fas fa-file-csv"></i>  .csv</mat-option>
+                <mat-option value="2"><i class="far fa-file-pdf"></i>  .pdf</mat-option>
+                <mat-option value="3"><i class="far fa-file-word"></i>  .docx (Word)</mat-option>
+                <mat-option value="4"><i class="fas fa-database"></i>  .sql</mat-option>
+                <mat-option value="5"><i class="far fa-file-alt"></i>  .txt</mat-option>
+              </mat-select>
             </mat-form-field>
 
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
               <mat-label>Description</mat-label>
               <input matInput  placeholder="Placeholder" type="text" required>
-              <mat-error>Test Kit Name is required</mat-error>
+              <mat-error>Please enter description</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
-              <mat-label>Stock</mat-label>
-              <input matInput  placeholder="Placeholder" type="number" required>
-              <mat-error>Stock is required</mat-error>
+              <mat-label>Report</mat-label>
+              <mat-select>
+                <mat-option value="1"><i class="fas fa-file-import"></i> &nbsp; Product Category Sales Report</mat-option>
+                <mat-option value="2"><i class="fas fa-file-import"></i> &nbsp; Monthly Sales Report</mat-option>
+                <mat-option value="3"><i class="fas fa-file-import"></i> &nbsp; Detailed Report</mat-option>
+
+              </mat-select>
             </mat-form-field>
 
             <div class="form-button-group" fxFlex="100%">

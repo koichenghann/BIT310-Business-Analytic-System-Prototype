@@ -18,6 +18,27 @@ const dummyData: Data[] = [
   {fileType: 'far fa-file-alt', format:'.txt', fileName:'New_customer_list_2020', dateCreated:'2020-10-15', fileSize:'25 KB', description:'-' },
 ];
 
+export interface PeriodicElement {
+  customerID: string;
+  name: string;
+
+  contact: string;
+  address: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {customerID: 'C001', name: 'Marry', contact: '01781321321', address: 'Taman Jaya'},
+  {customerID: 'C002', name: 'Chris', contact: '01982312313', address: 'Setia Alam'},
+  {customerID: 'C003', name: 'Kylie', contact: '0167221321', address: 'Puchong'},
+  {customerID: 'C004', name: 'Brian', contact: '0167221321', address: 'Subang Jaya'},
+  {customerID: 'C005', name: 'Brandon', contact: '0167221321', address: 'Kepong'},
+  {customerID: 'C006', name: 'Jason', contact: '0167221321', address: 'Sri Petaling'},
+  {customerID: 'C007', name: 'Nick', contact: '0167221321', address: 'Bukit Jalil'},
+  {customerID: 'C008', name: 'Alexander', contact: '0167221321', address: 'Bukit Damansara'},
+  {customerID: 'C009', name: 'Figo', contact: '0167221321', address: 'Kota Damansara'},
+  {customerID: 'C010', name: 'Ronaldo', contact: '0167221321', address: 'Shah Alam'},
+];
+
 @Component({
   selector: 'data-entry-table-list',
   templateUrl: './data-entry-table-list.component.html',
@@ -35,7 +56,8 @@ export class DataEntryTableListComponent implements OnInit {
                     ];
   dataSource = dummyData;
 
-
+  displayedColumnsInfo: string[] = ['customerID', 'name', 'contact', 'address'];
+  dataSourceInfo = ELEMENT_DATA;
 
 
 
