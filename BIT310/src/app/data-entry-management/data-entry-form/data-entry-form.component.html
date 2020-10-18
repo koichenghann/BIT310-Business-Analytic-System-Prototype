@@ -1,3 +1,7 @@
+<side-nav-cts>
+
+
+
 <mat-grid-list cols="1" rowsHeight="1:1">
   <div class="content" fxLayout="row wrap">
 
@@ -13,32 +17,32 @@
         <mat-card-content>
           <form  fxLayout="row wrap" fxLayoutGap="20px grid">
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
-              <mat-label>Test Kit ID</mat-label>
-              <input matInput formControlName="id" placeholder="ID should be auto generated" type="text" >
-              <mat-error>Test Kit ID is required and should be auto generated</mat-error>
+              <mat-label>File Name</mat-label>
+              <input matInput placeholder="Enter the file name here." type="text" >
+              <mat-error>Please enter file name.</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
-              <mat-label>Test Centre ID</mat-label>
-              <input matInput formControlName="centre" placeholder="Placeholder" type="text" required>
+              <mat-label>File Type</mat-label>
+              <input matInput placeholder="Placeholder" type="text" required>
               <mat-error>Test Centre ID officer is required</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
-              <mat-label>Test Kit Name</mat-label>
-              <input matInput formControlName="name" placeholder="Placeholder" type="text" required>
+              <mat-label>Description</mat-label>
+              <input matInput  placeholder="Placeholder" type="text" required>
               <mat-error>Test Kit Name is required</mat-error>
             </mat-form-field>
 
             <mat-form-field appearance="outline" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
               <mat-label>Stock</mat-label>
-              <input matInput formControlName="stock" placeholder="Placeholder" type="number" required>
+              <input matInput  placeholder="Placeholder" type="number" required>
               <mat-error>Stock is required</mat-error>
             </mat-form-field>
 
             <div class="form-button-group" fxFlex="100%">
               <!-- <a (click)="editForm()" *ngIf="mode=='view'">Edit</a> -->
-              <a href="">Cancel</a>
+              <a href="/data-entry-management">Cancel</a>
               <!-- <button mat-raised-button color="warn" click="cancel()">Cancel</button> -->
               <button mat-raised-button color="primary" type="submit">Add</button>
             </div>
@@ -51,3 +55,4 @@
 
   </div>
 </mat-grid-list>
+</side-nav-cts>
