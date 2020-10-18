@@ -6,22 +6,22 @@
   overflow: hidden;
   padding: 4em 3em 4em 3em;
 }
-.wrapper-1 mat-form-field{
+.wrapper-3-1 mat-form-field{
   width: 8em;
   margin-left: 1.5em;
 }
-.wrapper-1 span{
+.wrapper-3-1 span{
   color: grey;
 }
 .to{
   margin-left: 4em;
 }
-.wrapper-2 button{
+.wrapper-3-2 button{
   margin-top: 0.3em;
   margin-left: 1.5em;
   height: 3.55em;
 }
-.wrapper-1{
+.wrapper-3-1{
   height: 100%;
   display: inline-block;
   overflow:hidden;
@@ -29,7 +29,7 @@
   padding: 0;
 
 }
-.wrapper-2{
+.wrapper-3-2{
   height: 100%;
   display: inline-block;
   box-sizing:border-box !important;
@@ -37,3 +37,9 @@
   text-align: left;
 }
 // end of top bar
+
+.custom-main-wrapper{
+  width: 100%;
+  // height: calc(100%);
+  // background-color: green;
+}
