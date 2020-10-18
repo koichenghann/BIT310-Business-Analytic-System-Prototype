@@ -22,6 +22,7 @@ import { MonthlySalesReportComponent } from './monthly-sales/monthly-sales-repor
 import { ProductCategorySalesReportComponent } from './product-category-sales/product-category-sales-report/product-category-sales-report.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { DataEntryManagementComponent } from './data-entry-management/data-entry-management/data-entry-management.component';
+import { DataEntryFormComponent } from './data-entry-management/data-entry-form/data-entry-form.component';
 import { DetailedReportComponent } from './detailed-report/detailed-report/detailed-report.component';
 import { ForecastReportComponent } from './forecast-report/forecast-report/forecast-report.component';
 import { SideNavComponent } from './shared/side-nav/side-nav.component';
@@ -81,6 +82,7 @@ import { BaseGenerationOptionCardComponent } from './base-generation-option-card
     ProductCategorySalesReportComponent,
     DashboardComponent,
     DataEntryManagementComponent,
+    DataEntryFormComponent,
     DetailedReportComponent,
     ForecastReportComponent,
     SideNavComponent,
