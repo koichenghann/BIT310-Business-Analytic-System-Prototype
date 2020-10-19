@@ -20,7 +20,7 @@ export class ProductSalesDistributionReportComponent implements OnInit {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: '50%',
+            height: '47%',
             marginBottom: -10,
         },
         title: {

@@ -31,9 +31,15 @@ mat-card-title{
   color: white; /*#1200b5;*/ /*#006e7a*/
 }
 
+// mat-card-content{
+//   margin: 2em 2em 2em 0;
+// }
 mat-card-content{
-  /*padding: 3em 2em 3em 0;*/
-  margin: 2em 2em 2em 0;
+  padding: 1em 1em 3em 1em;
+  height: calc(100% - 8em);
+  // margin: 2em 2em 2em 0;
+  // background-color: green;
+  overflow: hidden;
 }
 
 .header-button-group{

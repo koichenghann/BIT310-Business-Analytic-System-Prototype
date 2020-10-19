@@ -20,7 +20,7 @@ export class ProductSingleCategorySalesReportChartComponent implements OnInit {
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie',
-            height: '70%',
+            height: '65%',
             marginTop: 30
 
 
