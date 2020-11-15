@@ -78,7 +78,7 @@ import { MiniCardComponent } from './charts-fyp/mini-card/mini-card.component';
 
 
 
-
+import { AreaLineComponent } from './webPerformDashboard/widgets/area-line/area-line.component';
 import { SideNavbarComponent } from './webPerformDashboard/sideNavBar/side-navbar.component';
 import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.component';
 import { WebTrafficComponent } from './webPerformDashboard/web-traffic/web-traffic.component';
@@ -119,11 +119,12 @@ import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-
     MiniCardComponent,
 
 
-
+    AreaLineComponent,
     SideNavbarComponent,
     UserTrackComponent,
     WebTrafficComponent,
     WebPerformDashboardComponent
+
 
 
 
