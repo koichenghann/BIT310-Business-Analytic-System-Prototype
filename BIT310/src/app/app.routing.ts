@@ -13,6 +13,9 @@ import { PostsComponent } from './test-area/posts/posts.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { SubscriptionComponent } from './auth/subscription/subscription.component';
 
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './products/product/product.component';
+
 
 
 
@@ -30,7 +33,11 @@ const APP_ROUTES: Routes = [
   {path:'profile', component: ProfileComponent},
   {path:'subscription', component: SubscriptionComponent},
   {path:'test-area-1', component: TestAreaOneComponent},
-  {path:'posts', component: PostsComponent}
+  {path:'posts', component: PostsComponent},
+
+
+  {path:'products', component: ProductsComponent},
+  {path:'product', component: ProductComponent}
 
   // {path:'', redirectTo: '/home', pathMatch: 'full'},
 ];
