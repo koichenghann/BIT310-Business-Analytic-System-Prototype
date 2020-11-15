@@ -69,6 +69,8 @@ import { ForecastProductSalesChartComponent } from './forecast-report/forecast-p
 import { BaseGenerationOptionCardComponent } from './base-generation-option-card/base-generation-option-card.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { SubscriptionComponent } from './auth/subscription/subscription.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './products/product/product.component';
 
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
@@ -106,6 +108,8 @@ import { SubscriptionComponent } from './auth/subscription/subscription.componen
     BaseGenerationOptionCardComponent,
     ProfileComponent,
     SubscriptionComponent,
+    ProductsComponent,
+    ProductComponent,
     
 
     // PieComponent
