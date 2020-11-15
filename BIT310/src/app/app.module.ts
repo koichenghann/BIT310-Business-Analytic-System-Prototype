@@ -83,6 +83,7 @@ import { SideNavbarComponent } from './webPerformDashboard/sideNavBar/side-navba
 import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.component';
 import { WebTrafficComponent } from './webPerformDashboard/web-traffic/web-traffic.component';
 import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
+import { ProductRevenueComponent } from './charts-fyp/product-revenue/product-revenue.component';
 
 @NgModule({
   declarations: [
@@ -123,7 +124,8 @@ import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-
     SideNavbarComponent,
     UserTrackComponent,
     WebTrafficComponent,
-    WebPerformDashboardComponent
+    WebPerformDashboardComponent,
+    ProductRevenueComponent
 
 
 
