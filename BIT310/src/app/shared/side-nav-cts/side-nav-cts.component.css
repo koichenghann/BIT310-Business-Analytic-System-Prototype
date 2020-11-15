@@ -27,8 +27,9 @@ mat-nav-list a:hover{
 
 .toolbar_2 .mat-toolbar{
   background: inherit;
-  background-color:var(--customSidenavBackgroundColor2);
+  background-color: #ffffff;  /*--customSidenavBackgroundColor2*/
   display: none;
+  color: #233348 !important;
 }
 
 .mat-toolbar.mat-primary {
@@ -36,7 +37,11 @@ mat-nav-list a:hover{
   top: 0;
   z-index: 1;
   background-color: var(--customSidenavBackgroundColor1);
+  color: #233348;
+}
 
+.fa-chart-bar{
+  color: #ffc178  !important;
 }
 
 .spacer {
