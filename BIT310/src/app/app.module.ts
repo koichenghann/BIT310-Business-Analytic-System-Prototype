@@ -79,6 +79,11 @@ import { MiniCardComponent } from './charts-fyp/mini-card/mini-card.component';
 
 
 
+import { SideNavbarComponent } from './webPerformDashboard/sideNavBar/side-navbar.component';
+import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.component';
+import { WebTrafficComponent } from './webPerformDashboard/web-traffic/web-traffic.component';
+import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -111,7 +116,16 @@ import { MiniCardComponent } from './charts-fyp/mini-card/mini-card.component';
     SubscriptionComponent,
     ProductsComponent,
     ProductComponent,
-    MiniCardComponent
+    MiniCardComponent,
+
+
+
+    SideNavbarComponent,
+    UserTrackComponent,
+    WebTrafficComponent,
+    WebPerformDashboardComponent
+
+
 
 
     // PieComponent
