@@ -17,7 +17,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 
 
-
+import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
 
 const APP_ROUTES: Routes = [
   {path:'', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -37,7 +37,10 @@ const APP_ROUTES: Routes = [
 
 
   {path:'products', component: ProductsComponent},
-  {path:'product', component: ProductComponent}
+  {path:'product', component: ProductComponent},
+
+
+  {path:'web-performance/dashboard', component: WebPerformDashboardComponent }
 
   // {path:'', redirectTo: '/home', pathMatch: 'full'},
 ];
