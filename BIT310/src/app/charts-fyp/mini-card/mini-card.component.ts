@@ -16,6 +16,9 @@ export class MiniCardComponent implements OnInit {
 
   chartOptions: {};
   Highcharts = Highcharts;
+  // Highcharts.seriesTypes.line.prototype.getPointSpline = Highcharts.seriesTypes.spline.prototype.getPointSpline;
+
+
 
   constructor() { }
 
@@ -23,11 +26,11 @@ export class MiniCardComponent implements OnInit {
 
     this.chartOptions = {
         chart: {
-            type: 'area',
+            type: 'spline',
             backgroundColor: null,
             borderWidth: 0,
             margin: [2, 2, 2, 2],
-            height: 50
+            height: 50,
         },
         title: {
             text: null
@@ -36,8 +39,8 @@ export class MiniCardComponent implements OnInit {
             text: null
         },
         tooltip: {
-            split: true,
-            outside: true
+            split: false,
+            outside: false
         },
         legend: {
           enabled: false
@@ -58,7 +61,9 @@ export class MiniCardComponent implements OnInit {
           },
           startOnTick: false,
           endOnTick: false,
-          tickOptions: []
+          tickOptions: [],
+          visible: false
+
         },
         yAxis: {
           labels: {
@@ -70,8 +75,25 @@ export class MiniCardComponent implements OnInit {
           },
           startOnTick: false,
           endOnTick: false,
-          tickOptions: []
+          tickOptions: [],
+          tickWidth: 0,
+          crosshair: false,
+          lineWidth: 0,
+          gridLineWidth:0,
+          visible: false
         },
+        plotOptions: {
+        spline: {
+            marker: {
+                enabled: false,
+                radius: 4,
+                lineColor: '#32a852',
+                lineWidth: 1
+              },
+              lineColor: '#03bf00'
+            }
+        },
+
         series: [{
           data: [71, 78, 39, 66]
         }]

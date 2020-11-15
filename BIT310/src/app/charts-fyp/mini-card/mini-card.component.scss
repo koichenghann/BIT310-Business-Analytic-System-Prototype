@@ -1,9 +1,14 @@
 mat-card{
-  width: calc(100% - 1em);
+  width: calc(100% - 4em);
   margin: 0;
-  padding: 0.5em;
+  padding: 2em;
 }
 
+mat-card-title{
+  color: #a3a3a3;
+  font-size: 15px;
+  padding-bottom: 0.5em;
+}
 
 h4{
   margin-top: 0;
@@ -11,20 +16,33 @@ h4{
 }
 
 .total{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .mat-icon {
   color: green !important;
-  font-size: 2em !important;
+  font-size: 20px !important;
 }
 .description {
-  color: green !important;
-  font-size: 2em !important;
+  color: #03bf00 !important;
+  font-size: 20px !important;
 }
 
 .mat-icon{
+  color: #03bf00 !important;
   position: relative;
   padding: 0;
   top: 5px;
+}
+
+.stats{
+  // background-color: yellow;
+  width: 50%;
+  margin: 0 0 0 0 !important;
+}
+.widget{
+  // background-color: green;
+  width: 50%;
+  height: 0;
+  text-align: right;
 }
