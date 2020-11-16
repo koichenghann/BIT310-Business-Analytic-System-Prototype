@@ -94,6 +94,7 @@ import { SalesComponent } from './sales/sales.component';
 import { VisitorsTableComponent } from './visitor/visitors-table/visitors-table.component';
 import { CustomerTableComponent } from './visitor/customer-table/customer-table.component';
 import { OrderTableComponent } from './sales/order-table/order-table.component';
+import { VisitorsCustomersComponent } from './charts-fyp/visitors-customers/visitors-customers.component';
 
 @NgModule({
   declarations: [
@@ -145,7 +146,8 @@ import { OrderTableComponent } from './sales/order-table/order-table.component';
     SalesComponent,
     VisitorsTableComponent,
     CustomerTableComponent,
-    OrderTableComponent
+    OrderTableComponent,
+    VisitorsCustomersComponent
 
 
 
