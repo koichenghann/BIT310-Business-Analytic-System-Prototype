@@ -45,3 +45,31 @@
 .large-card-wrapper{
   width: 100%;
 }
+
+
+
+
+#table-card{
+  width: calc(100% - 4em);
+  margin: 0;
+  padding: 2em;
+}
+
+mat-card-title{
+  color: #a3a3a3;
+  font-size: 15px;
+  padding-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.header-cell {
+  background-color: #e8f1ff !important; //#2363c4
+  opacity: 0.8;
+}

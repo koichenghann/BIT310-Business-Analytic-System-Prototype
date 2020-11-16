@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, ViewChild, OnInit} from '@angular/core';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-product',
@@ -25,4 +28,56 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+
+
+
+
+  displayedColumns: string[] = ['orderId', 'customerName', 'date', 'orderAmmount', 'revenue'];
+    dataSource = new MatTableDataSource<G2_orders>(G2_orders);
+
+    @ViewChild(MatPaginator) paginator: MatPaginator;
+    @ViewChild(MatSort) sort: MatSort;
+
+    ngAfterViewInit() {
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+    }
+
 }
+
+
+
+
+
+
+
+
+export interface G2_orders {
+  orderId: string,
+  customerId: string,
+  customerName: string,
+  orderAmmount: number,
+  revenue: number,
+  date: string,
+  time: string
+}
+
+const G2_orders: G2_orders[] = [
+  {orderId: 'O001', customerId: 'C001', customerName: 'Jack', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O002', customerId: 'C002', customerName: 'James', orderAmmount: 2, revenue:  10, date: '08/11/2020', time: '0930'},
+  {orderId: 'O003', customerId: 'C003', customerName: 'John', orderAmmount: 4, revenue: 20, date: '08/11/2020', time: '0930'},
+  {orderId: 'O004', customerId: 'C004', customerName: 'Jane', orderAmmount: 2, revenue:  10, date: '08/11/2020', time: '0930'},
+  {orderId: 'O005', customerId: 'C005', customerName: 'Janete', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O006', customerId: 'C006', customerName: 'Joshua', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O007', customerId: 'C007', customerName: 'Jacky', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O008', customerId: 'C008', customerName: 'Jeff', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O009', customerId: 'C009', customerName: 'Sam', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O010', customerId: 'C010', customerName: 'Simson', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O011', customerId: 'C011', customerName: 'Sunny', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O012', customerId: 'C012', customerName: 'Steve', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O013', customerId: 'C013', customerName: 'Stant', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O014', customerId: 'C014', customerName: 'Rose', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+  {orderId: 'O015', customerId: 'C015', customerName: 'Amy', orderAmmount: 1, revenue:  5, date: '08/11/2020', time: '0930'},
+];
