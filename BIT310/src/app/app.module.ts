@@ -76,7 +76,7 @@ import { MiniCardComponent } from './charts-fyp/mini-card/mini-card.component';
 
 // import { PieComponent } from './test-area/widgets/pie/pie.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
-
+import { AreaSplineComponent } from './webPerformDashboard/widgets/area-spline/area-spline.component';
 import { AreaLineUsersComponent } from './webPerformDashboard/widgets/area-line-users/area-line-users.component';
 import { AreaLineSessionsComponent } from './webPerformDashboard/widgets/area-line-sessions/area-line-sessions.component';
 import { AreaLineComponent } from './webPerformDashboard/widgets/area-line/area-line.component';
@@ -121,7 +121,7 @@ import { ProductOrderComponent } from './tables-fyp/product-order/product-order.
     ProductsComponent,
     ProductComponent,
     MiniCardComponent,
-
+    AreaSplineComponent,
     AreaLineUsersComponent,
     AreaLineSessionsComponent,
     AreaLineComponent,
