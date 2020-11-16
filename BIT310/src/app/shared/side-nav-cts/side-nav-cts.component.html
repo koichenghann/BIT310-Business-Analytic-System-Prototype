@@ -10,7 +10,7 @@
       <a mat-list-item
         routerLink="/dashboard-fyp"
         routerLinkActive="active-link">
-        <i class="fas fa-boxes"></i> &nbsp;&nbsp; Dashboard</a>
+        <i class="fas fa-tachometer-alt"></i> &nbsp;&nbsp; Dashboard</a>
 
       <a mat-list-item
         routerLink="/products"
@@ -25,12 +25,12 @@
       <a mat-list-item
         routerLink="/sales"
         routerLinkActive="active-link">
-        <i class="fas fa-boxes"></i> &nbsp;&nbsp; Sales Performance</a>
+        &nbsp;<i class="fas fa-dollar-sign"></i> &nbsp;&nbsp;&nbsp; Sales Performance</a>
 
       <a mat-list-item
         routerLink="/visitors"
         routerLinkActive="active-link">
-        <i class="fas fa-boxes"></i> &nbsp;&nbsp; Visitors</a>
+        <i class="fas fa-users"></i> &nbsp;&nbsp; Visitors</a>
 
 
 
@@ -74,7 +74,7 @@
       <a mat-list-item [routerLink]="route4" routerLinkActive="active-link"><i class="fas fa-calendar-check"></i> &nbsp; {{ list_item_4 }}</a>
       <a mat-list-item [routerLink]="route5" routerLinkActive="active-link"><i class="fas fa-plus-circle"></i> &nbsp; {{ list_item_5 }}</a>
     -->
-      <a (click)="logout()" routerLink="/login" routerLinkActive="active-link" mat-list-item href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; {{ list_item_6 }}</a>
+      <a (click)="logout()" routerLink="/login" routerLinkActive="active-link" mat-list-item href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; &nbsp; {{ list_item_6 }}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -59,7 +59,7 @@ export class CombinedDataComponent implements OnInit {
             text: null
           },
           labels: {
-            format: '{value} Nov'
+            format: "Nov {value}"
           }
         },
         plotOptions: {
@@ -67,7 +67,8 @@ export class CombinedDataComponent implements OnInit {
             stacking: 'normal'
           },
           series: {
-            pointWidth: 15
+            pointWidth: 15,
+            pointStart: 12,
           }
         },
 
@@ -76,7 +77,7 @@ export class CombinedDataComponent implements OnInit {
             tooltip: {
                 valueSuffix: ' MYR'
             },
-            data: [50, 30, 40, 80, 40, 70],
+            data: [50, 30, 40, 50, 80, 40, 70],
             stack: 'one'
         },{
             name: "Average Order's Revenue",
@@ -97,7 +98,7 @@ export class CombinedDataComponent implements OnInit {
             tooltip: {
                 valueSuffix: ' users'
             },
-            data: [20, 50, 60, 80, 40, 70, 50],
+            data: [20, 50, 60, 50, 80, 40, 70],
             stack: 'one'
         },{
             name: 'Customers',

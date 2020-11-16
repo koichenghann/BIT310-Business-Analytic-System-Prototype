@@ -1,10 +1,19 @@
 <side-nav-cts>
   <div id="main">
-    <div class="main-wrapper">
-      <div class="custom-page-header">
-        <a [routerLink]="['/products']">Products</a>
-        / {{product.name}}
 
+    <div class="main-wrapper">
+      <div  fxLayout="row">
+        <div class="custom-page-header">
+          <a [routerLink]="['/products']">Products</a>
+          / {{product.name}}
+
+        </div>
+        <div class="filler"></div>
+        <div class="custom-date-range">
+          from: <input type="date" name="" value="2020-11-12">
+          &nbsp;&nbsp;&nbsp;
+          to: <input type="date" name="" value="2020-11-18">
+        </div>
       </div>
     </div>
 

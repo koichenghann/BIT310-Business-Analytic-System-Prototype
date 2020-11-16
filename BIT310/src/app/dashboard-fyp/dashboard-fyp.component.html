@@ -2,8 +2,16 @@
   <div id="main">
 
     <div class="main-wrapper">
-      <div class="custom-page-header">
-        Dashboard
+      <div  fxLayout="row">
+        <div class="custom-page-header">
+          Dashboard
+        </div>
+        <div class="filler"></div>
+        <div class="custom-date-range">
+          from: <input type="date" name="" value="2020-11-12">
+          &nbsp;&nbsp;&nbsp;
+          to: <input type="date" name="" value="2020-11-18">
+        </div>
       </div>
     </div>
 
@@ -29,7 +37,7 @@
 
     <!-- product revenue/sold and sales through rate -->
     <div class="main-wrapper">
-      <div  fxLayout="row" class="card-array-wrapper">
+      <div  fxLayout="row">
         <div class="medium-card-wrapper">
          <app-combined-data></app-combined-data>
         </div>
@@ -43,12 +51,12 @@
 
     <!-- product revenue/sold and sales through rate -->
     <div class="main-wrapper">
-      <div  fxLayout="row" class="card-array-wrapper">
+      <div  fxLayout="row">
         <div class="medium-card-wrapper">
-          <app-customer-table></app-customer-table>
+          <app-top-products-table></app-top-products-table>
         </div>
         <div class="medium-card-wrapper">
-          <app-visitors-table></app-visitors-table>
+          <app-kpi-list-table></app-kpi-list-table>
         </div>
       </div>
     </div>

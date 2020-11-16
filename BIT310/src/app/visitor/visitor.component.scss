@@ -1,15 +1,25 @@
 #main{
   padding: 0 0 2em 0;
 }
-.custom-page-header{
-  font-size: 28px;
-  padding: 0.5em 0;
-}
 .main-wrapper{
   width: calc(100% - 4em);
   // background-color: purple;
   padding: 2em 2em 0 2em;
 }
+.custom-page-header{
+  font-size: 28px;
+  padding: 0.5em 0;
+}
+.custom-date-range{
+  // font-size: 28px;
+  padding: 0.9em 1em 0.5em 1em;
+  // background-color: white;
+  opacity: 0.4;
+}
+.filler{
+  flex: 1;
+}
+
 
 
 //style for structuring card

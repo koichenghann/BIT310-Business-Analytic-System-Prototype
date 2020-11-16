@@ -13,12 +13,12 @@ export class DashboardFypComponent implements OnInit {
   ordersData = [7, 8, 5, 10];
   ordersPercentage = (this.ordersData[3]-this.ordersData[2])/this.ordersData[2]*100;
 
-  salesGrowthData = [80, 40, 70, 50];
+  salesGrowthData = [50, 80, 40, 70];
   salesGrowthPercentage = (this.salesGrowthData[3]-this.salesGrowthData[2])/this.salesGrowthData[2]*100;
 
-  avgOrdersValueData = [100, 90, 80, 70];
+  avgOrdersValueData = [80, 40, 70, 50];
   avgOrdersValuePercentage = (this.avgOrdersValueData[3]-this.avgOrdersValueData[2])/this.avgOrdersValueData[2]*100;
-  
+
   constructor() { }
 
   ngOnInit(): void {

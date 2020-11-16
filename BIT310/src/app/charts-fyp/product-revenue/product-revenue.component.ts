@@ -60,7 +60,7 @@ export class ProductRevenueComponent implements OnInit {
             text: null
           },
           labels: {
-            format: '{value} Nov'
+            format: "Nov {value}"
           }
         },
         plotOptions: {
