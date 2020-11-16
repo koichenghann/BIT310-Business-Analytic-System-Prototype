@@ -19,7 +19,7 @@ export class BarTrafficSourceComponent implements OnInit {
           type: 'bar'
       },
       title: {
-          text: 'Top Traffic Sources'
+          text: 'Top Referrers'
       },
       subtitle: {
           text: ''
