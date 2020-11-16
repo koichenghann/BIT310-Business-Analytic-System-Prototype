@@ -21,10 +21,10 @@ export class SemiPieComponent implements OnInit{
         plotShadow: false
     },
     title: {
-        text: 'Browser<br>shares<br>2017',
+        text: 'Platforms',
         align: 'center',
         verticalAlign: 'middle',
-        y: 60
+        y: 50
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -38,37 +38,30 @@ export class SemiPieComponent implements OnInit{
         pie: {
             dataLabels: {
                 enabled: true,
-                distance: -50,
+                distance: 20,
                 style: {
-                    fontWeight: 'bold',
-                    color: 'white'
+                    fontWeight: 'light',
+                    color: 'grey'
                 }
             },
             startAngle: -90,
             endAngle: 90,
-            center: ['50%', '75%'],
-            size: '110%'
+            center: ['50%', '100%'],
+            size: '200%'
         }
     },
     series: [{
         type: 'pie',
-        name: 'Browser share',
-        innerSize: '50%',
+        name: 'Plaform share',
+        innerSize: '55%',
         data: [
-            ['Chrome', 58.9],
-            ['Firefox', 13.29],
-            ['Internet Explorer', 13],
-            ['Edge', 3.78],
-            ['Safari', 3.42],
-            {
-                name: 'Other',
-                y: 7.61,
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        ]
-
+            ['Desktop', 62.2],
+            ['Mobile', 27.8],
+        ],
+        dataLabels: {
+          enabled: true,
+          format: '{point.name}: {point.y:.1f}%'
+      }
       }
     ]}
   }

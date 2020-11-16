@@ -149,6 +149,7 @@
         <app-widget-area-spline></app-widget-area-spline>
       </div>
 
+
       <div class="mid-row-right-1" fxFlex = "25">
         <h2 class="mid-row-content-percent">55.6%</h2>
         <p class="mid-row-content-arrow"><i class="fas fa-caret-down"></i> 1.1%</p>
@@ -159,17 +160,43 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-card class=" mid-card-2 mat-elevation-z2" fxFlex="64.5">
+  <div class="mid-card-2" fxFlex="64.5">
+    <mat-card class="mat-elevation-z2 card-summary-web-1">
 
-    <mat-card-header>
-      <mat-card-subtitle>HELP e-merchandising web traffic</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <!--<app-widget-map-location></app-widget-map-location>-->
-      <app-widget-semipie></app-widget-semipie>
+      <mat-card-header>
+        <mat-card-subtitle>HELP e-merchandising web traffic</mat-card-subtitle>
+        <mat-card-title>Visitor's Platform</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+       <!-- <app-widget-map-location></app-widget-map-location> -->
 
-    </mat-card-content>
-  </mat-card>
+
+
+       <div class="summary-web-platform">
+        <app-widget-semipie></app-widget-semipie>
+       </div>
+
+
+
+
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z2 card-summary-web-2">
+
+      <mat-card-header>
+        <mat-card-subtitle>HELP e-merchandising web traffic</mat-card-subtitle>
+        <mat-card-title>Which Sites are sending traffic to us?</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+       <!-- <app-widget-map-location></app-widget-map-location> -->
+      <app-websource-table></app-websource-table>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+
 
 
 </div>
