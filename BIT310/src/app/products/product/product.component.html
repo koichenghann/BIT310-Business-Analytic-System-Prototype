@@ -25,9 +25,6 @@
         <div id="card-1" class="mini-card-wrapper">
           <app-mini-card label="Instock" suffix="" [percentage]="inStockPercentage" colorTheme='#1441c9' [data]="inStockData" hideIcon='true'></app-mini-card>
         </div>
-
-        <!-- <app-mini-card></app-mini-card>
-        <app-mini-card></app-mini-card> -->
       </div>
     </div>
 
@@ -68,7 +65,7 @@
 
             <!-- Table -->
             <div class="mat-elevation-0">
-              <table mat-table [dataSource]="dataSource" matSort>
+              <table mat-table [dataSource]="dataSource" matSort matSortActive="orderId" matSortDirection="desc">
 
                 <!-- Order Id Column -->
                 <ng-container matColumnDef="orderId">

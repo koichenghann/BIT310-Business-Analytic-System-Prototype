@@ -89,6 +89,9 @@ import { SellThroughComponent } from './charts-fyp/sell-through/sell-through.com
 import { ProductOrderComponent } from './tables-fyp/product-order/product-order.component';
 import { VisitorComponent } from './visitor/visitor.component';
 import { SalesComponent } from './sales/sales.component';
+import { VisitorsTableComponent } from './visitor/visitors-table/visitors-table.component';
+import { CustomerTableComponent } from './visitor/customer-table/customer-table.component';
+import { OrderTableComponent } from './sales/order-table/order-table.component';
 
 @NgModule({
   declarations: [
@@ -135,7 +138,10 @@ import { SalesComponent } from './sales/sales.component';
     SellThroughComponent,
     ProductOrderComponent,
     VisitorComponent,
-    SalesComponent
+    SalesComponent,
+    VisitorsTableComponent,
+    CustomerTableComponent,
+    OrderTableComponent
 
 
 

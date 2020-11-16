@@ -15,6 +15,8 @@ import { SubscriptionComponent } from './auth/subscription/subscription.componen
 
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
+import { VisitorComponent } from './visitor/visitor.component';
+import { SalesComponent } from './sales/sales.component';
 
 
 import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
@@ -38,6 +40,8 @@ const APP_ROUTES: Routes = [
 
   {path:'products', component: ProductsComponent},
   {path:'products/product/:productId', component: ProductComponent},
+  {path:'sales', component: SalesComponent},
+  {path:'visitors', component: VisitorComponent},
 
 
   {path:'web-performance/dashboard', component: WebPerformDashboardComponent }
