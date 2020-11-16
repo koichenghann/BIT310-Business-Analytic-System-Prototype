@@ -41,12 +41,12 @@ export class AreaLineUsersComponent implements OnInit {
           },
 
           series: {
-            color: 'green'
+            color: 'orange'
         }
       },
       series: [{
           name: "New Sign-Up",
-          data: [4500, 3750, 5670, 6350, 7200, 6880]
+          data: [2500, 1670, 2830, 3120, 3650, 3240]
       }]
   }
 }}
