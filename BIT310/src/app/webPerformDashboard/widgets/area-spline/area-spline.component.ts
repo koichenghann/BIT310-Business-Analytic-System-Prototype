@@ -16,10 +16,11 @@ export class AreaSplineComponent implements OnInit {
   ngOnInit(){
     this.chartOptions ={
       chart: {
-          type: 'areaspline'
+          type: 'areaspline',
+          backgroundColor: null,
       },
       title: {
-          text: 'Average fruit consumption during one week'
+          text: ''
       },
       legend: {
           layout: 'vertical',
@@ -31,6 +32,8 @@ export class AreaSplineComponent implements OnInit {
           borderWidth: 1,
           backgroundColor:
               Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
+            ,
+            enabled:false
       },
       xAxis: {
           categories: [
@@ -42,35 +45,44 @@ export class AreaSplineComponent implements OnInit {
               'Saturday',
               'Sunday'
           ],
-          plotBands: [{ // visualize the weekend
-              from: 4.5,
-              to: 6.5,
-              color: 'rgba(68, 170, 213, .2)'
-          }]
+          labels: {
+            enabled: false
+        }
+
       },
       yAxis: {
           title: {
-              text: 'Fruit units'
-          }
+              text: ''
+          },
+          labels: {
+            enabled: false
+        },
+        gridLineWidth: 0,
       },
       tooltip: {
-          shared: true,
-          valueSuffix: ' units'
+          shared: false,
+          valueSuffix: ' units',
+          enabled: false
       },
       credits: {
           enabled: false
       },
       plotOptions: {
+
+        line: {
+          enableMouseTracking: false
+      },
           areaspline: {
               fillOpacity: 0.5
-          }
+          },
+
+
+
+
       },
       series: [{
           name: 'John',
-          data: [3, 4, 3, 5, 4, 10, 12]
-      }, {
-          name: 'Jane',
-          data: [1, 3, 4, 3, 3, 5, 4]
+          data: [10, 5, 8, 4, 7, 15, 12]
       }]
   }
 }
