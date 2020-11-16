@@ -53,7 +53,7 @@ export class SemiPieComponent implements OnInit{
     series: [{
         type: 'pie',
         name: 'Plaform share',
-        innerSize: '55%',
+        innerSize: '60%',
         data: [
             ['Desktop', 62.2],
             ['Mobile', 27.8],
