@@ -147,7 +147,7 @@ import { VisitorsCustomersComponent } from './charts-fyp/visitors-customers/visi
     VisitorsTableComponent,
     CustomerTableComponent,
     OrderTableComponent,
-    VisitorsCustomersComponent
+    VisitorsCustomersComponent,
 
 
 
