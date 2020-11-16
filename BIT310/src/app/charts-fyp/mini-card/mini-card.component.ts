@@ -9,18 +9,23 @@ import HC_exporting from 'highcharts/modules/exporting';
   styleUrls: ['./mini-card.component.scss']
 })
 export class MiniCardComponent implements OnInit {
-  customColor = 'blue';
+  customColor;
+  negativeColor = '#ff4242';
+  displayPercent;
 
 //#03bf00
   @ViewChild('percentage') percent;
   @ViewChild('icon') icon;
 
   @Input() label: string;
-  @Input() total: string;
-  @Input() percentage: string;
+  @Input() suffix: string;
+  @Input() percentage: number;
   @Input() hidechart: boolean;
   @Input() colorTheme: string;
   @Input() data: number[];
+  @Input() hideIcon: boolean;
+
+
 
 
   chartOptions: {};
@@ -32,10 +37,29 @@ export class MiniCardComponent implements OnInit {
   constructor() { }
 
   ngAfterViewInit() {
-  this.customColor = this.colorTheme;
+
+  if ( this.percentage > 0 ) {
+    this.customColor = this.colorTheme;
+  }
+  else if (this.percentage < 0) {
+    this.customColor = this.negativeColor;
+  }
+  else {
+    this.customColor = 'blue';
+  }
   }
 
   ngOnInit(): void {
+    this.displayPercent = Math.abs(Math.round(this.percentage));
+    if ( this.percentage > 0 ) {
+      this.customColor = this.colorTheme;
+    }
+    else if (this.percentage < 0) {
+      this.customColor = this.negativeColor;
+    }
+    else {
+      this.customColor = 'blue';
+    }
 
     this.chartOptions = {
         chart: {
@@ -100,10 +124,10 @@ export class MiniCardComponent implements OnInit {
               marker: {
                   enabled: false,
                   radius: 4,
-                  lineColor: this.colorTheme,
+                  lineColor: this.customColor,
                   lineWidth: 1
                 },
-                lineColor: this.colorTheme
+                lineColor: this.customColor
               }
         },
 
