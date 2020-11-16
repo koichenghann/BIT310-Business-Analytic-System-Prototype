@@ -17,6 +17,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 import { VisitorComponent } from './visitor/visitor.component';
 import { SalesComponent } from './sales/sales.component';
+import { DashboardFypComponent } from './dashboard-fyp/dashboard-fyp.component';
 
 
 import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
@@ -42,6 +43,8 @@ const APP_ROUTES: Routes = [
   {path:'products/product/:productId', component: ProductComponent},
   {path:'sales', component: SalesComponent},
   {path:'visitors', component: VisitorComponent},
+  {path:'dashboard-fyp', component: DashboardFypComponent},
+
 
 
   {path:'web-performance/dashboard', component: WebPerformDashboardComponent }

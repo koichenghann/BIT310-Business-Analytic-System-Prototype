@@ -96,6 +96,11 @@ import { CustomerTableComponent } from './visitor/customer-table/customer-table.
 import { OrderTableComponent } from './sales/order-table/order-table.component';
 import { VisitorsCustomersComponent } from './charts-fyp/visitors-customers/visitors-customers.component';
 import { SalesOrdersComponent } from './charts-fyp/sales-orders/sales-orders.component';
+import { CombinedDataComponent } from './charts-fyp/combined-data/combined-data.component';
+import { AbandonmentRateComponent } from './charts-fyp/abandonment-rate/abandonment-rate.component';
+import { DashboardFypComponent } from './dashboard-fyp/dashboard-fyp.component';
+import { TopProductsTableComponent } from './dashboard-fyp/top-products-table/top-products-table.component';
+import { KpiListTableComponent } from './dashboard-fyp/kpi-list-table/kpi-list-table.component';
 
 @NgModule({
   declarations: [
@@ -150,6 +155,11 @@ import { SalesOrdersComponent } from './charts-fyp/sales-orders/sales-orders.com
     OrderTableComponent,
     VisitorsCustomersComponent,
     SalesOrdersComponent,
+    CombinedDataComponent,
+    AbandonmentRateComponent,
+    DashboardFypComponent,
+    TopProductsTableComponent,
+    KpiListTableComponent,
 
 
 

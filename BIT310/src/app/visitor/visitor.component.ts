@@ -16,9 +16,9 @@ export class VisitorComponent implements OnInit {
   conversionRateData = [80, 40, 70, 50];
   conversionRatePercentage = (this.conversionRateData[3]-this.conversionRateData[2])/this.conversionRateData[2]*100;
 
-  bounceRateData = [100, 90, 80, 70];
+  bounceRateData = [40, 70, 50, 80];
   bounceRatePercentage = (this.bounceRateData[3]-this.bounceRateData[2])/this.bounceRateData[2]*100;
-  
+
   constructor() { }
 
   ngOnInit(): void {

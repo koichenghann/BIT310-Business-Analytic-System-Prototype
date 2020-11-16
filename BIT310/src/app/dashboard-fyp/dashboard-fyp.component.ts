@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sales',
-  templateUrl: './sales.component.html',
-  styleUrls: ['./sales.component.scss']
+  selector: 'app-dashboard-fyp',
+  templateUrl: './dashboard-fyp.component.html',
+  styleUrls: ['./dashboard-fyp.component.scss']
 })
-export class SalesComponent implements OnInit {
+export class DashboardFypComponent implements OnInit {
+
   revenueData = [50, 80, 40, 70];
   revenuePercentage = (this.revenueData[3]-this.revenueData[2])/this.revenueData[2]*100;
 
@@ -15,9 +16,9 @@ export class SalesComponent implements OnInit {
   salesGrowthData = [80, 40, 70, 50];
   salesGrowthPercentage = (this.salesGrowthData[3]-this.salesGrowthData[2])/this.salesGrowthData[2]*100;
 
-  avgOrdersValueData = [40, 60, 80, 70];
+  avgOrdersValueData = [100, 90, 80, 70];
   avgOrdersValuePercentage = (this.avgOrdersValueData[3]-this.avgOrdersValueData[2])/this.avgOrdersValueData[2]*100;
-
+  
   constructor() { }
 
   ngOnInit(): void {

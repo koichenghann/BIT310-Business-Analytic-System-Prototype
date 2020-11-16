@@ -28,10 +28,10 @@ export class VisitorsCustomersComponent implements OnInit {
         subtitle: {
             text: null
         },
-        tooltip: {
-            split: true,
-            valueSuffix: ' MYR'
-        },
+        // tooltip: {
+        //     split: true,
+        //     valueSuffix: ' Users'
+        // },
 
         legend: {
           enabled: true,
@@ -83,10 +83,18 @@ export class VisitorsCustomersComponent implements OnInit {
 
         series: [{
           name: 'Visitor',
+          tooltip: {
+              split: true,
+              valueSuffix: ' visitors'
+          },
           data: [50, 150, 90, 190, 160, 220, 110]
         },
         {
           name: 'Customer',
+          tooltip: {
+              split: true,
+              valueSuffix: ' customers'
+          },
           data: [9, 32, 21, 42, 35, 45, 12]
         }]
     };
