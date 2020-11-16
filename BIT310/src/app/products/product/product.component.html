@@ -1,17 +1,26 @@
 <side-nav-cts>
   <div id="main">
+    <div class="main-wrapper">
+      <div class="custom-page-header">
+        <a [routerLink]="['/products']">Products</a>
+        / {{product.name}}
 
+      </div>
+    </div>
+
+    <!-- test {{productId | json}} -->
     <!-- mini card array row -->
+
     <div class="main-wrapper">
       <div  fxLayout="row" class="card-array-wrapper">
         <div id="card-1" class="mini-card-wrapper">
-          <app-mini-card label="Revenue" suffix="MYR" [percentage]="revenuePercentage" colorTheme="#03bf00" [data]="revenueData"></app-mini-card>
+          <app-mini-card label="Revenue" [total]="commulativeRevenue" suffix="MYR" [percentage]="revenuePercentage" colorTheme="#03bf00" [data]="revenueData"></app-mini-card>
         </div>
         <div id="card-2" class="mini-card-wrapper">
-          <app-mini-card label="Item Sold" suffix="" [percentage]="itemSoldPercentage" colorTheme="#03bf00" [data]="itemSoldData"></app-mini-card>
+          <app-mini-card label="Item Sold" [total]="commulativeItemSold" suffix="" [percentage]="itemSoldPercentage" colorTheme="#03bf00" [data]="itemSoldData"></app-mini-card>
         </div>
         <div id="card-2" class="mini-card-wrapper">
-          <app-mini-card label="Views" suffix="" [percentage]="viewPercentage" colorTheme="#03bf00" [data]="viewData"></app-mini-card>
+          <app-mini-card label="Views" [total]="commulativeViews" suffix="" [percentage]="viewPercentage" colorTheme="#03bf00" [data]="viewData"></app-mini-card>
         </div>
         <div id="card-1" class="mini-card-wrapper">
           <app-mini-card label="Instock" suffix="" [percentage]="inStockPercentage" colorTheme='#1441c9' [data]="inStockData" hideIcon='true'></app-mini-card>

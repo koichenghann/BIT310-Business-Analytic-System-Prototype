@@ -2,6 +2,10 @@ import {AfterViewInit, Component, ViewChild, OnInit} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { Router, ActivatedRoute, ParamMap, NavigationStart, NavigationEnd } from '@angular/router';
+import { Observable } from 'rxjs';
+import { filter } from 'rxjs/operators';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-product',
@@ -11,21 +15,54 @@ import { MatPaginator } from '@angular/material/paginator';
 export class ProductComponent implements OnInit {
   oriStock = 100;
   //number must be scale down to 0 - 100
+  commulativeRevenue = 150;
   revenueData = [50, 80, 40, 70];
   revenuePercentage = (this.revenueData[3]-this.revenueData[2])/this.revenueData[2]*100;
 
+  commulativeItemSold = 30;
   itemSoldData = [7, 8, 5, 10];
   itemSoldPercentage = (this.itemSoldData[3]-this.itemSoldData[2])/this.itemSoldData[2]*100;
 
+  commulativeViews = 300;
   viewData = [80, 40, 70, 50];
   viewPercentage = (this.viewData[3]-this.viewData[2])/this.viewData[2]*100;
 
+  inStock = 70;
   inStockData = [100, 90, 80, 70];
   inStockPercentage = this.oriStock / 100 * this.inStockData[3];
 
-  constructor() { }
+
+
+  product;
+  // productId;
+  constructor(public route: ActivatedRoute, public router: Router, public productsService: ProductsService) {
+    // console.log( this.router.getCurrentNavigation());
+  }
 
   ngOnInit(): void {
+
+    this.product = this.productsService.getProductById(this.route.snapshot.params.productId);
+
+    console.log(this.product);
+
+      this.oriStock = this.product.oriStock;
+      //number must be scale down to 0 - 100
+      this.commulativeRevenue = this.product.revenue;
+      this.revenueData = [50, 80, 40, 70];
+      this.revenuePercentage = (this.revenueData[3]-this.revenueData[2])/this.revenueData[2]*100;
+
+      this.commulativeItemSold = this.product.sold;
+      this.itemSoldData = [7, 8, 5, 10];
+      this.itemSoldPercentage = (this.itemSoldData[3]-this.itemSoldData[2])/this.itemSoldData[2]*100;
+
+      this.commulativeViews = 300;
+      this.viewData = [80, 40, 70, 50];
+      this.viewPercentage = (this.viewData[3]-this.viewData[2])/this.viewData[2]*100;
+
+      this.inStock = this.product.inStock;
+      this.inStockData = [100, 90, 80, 70];
+      this.inStockPercentage = this.oriStock / 100 * this.inStockData[3];
+
   }
 
 
@@ -34,7 +71,7 @@ export class ProductComponent implements OnInit {
 
 
 
-  displayedColumns: string[] = ['orderId', 'customerName', 'date', 'orderAmmount', 'revenue'];
+    displayedColumns: string[] = ['orderId', 'customerName', 'date', 'orderAmmount', 'revenue'];
     dataSource = new MatTableDataSource<G2_orders>(G2_orders);
 
     @ViewChild(MatPaginator) paginator: MatPaginator;

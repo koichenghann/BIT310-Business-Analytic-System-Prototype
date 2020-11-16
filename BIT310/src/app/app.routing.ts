@@ -37,7 +37,7 @@ const APP_ROUTES: Routes = [
 
 
   {path:'products', component: ProductsComponent},
-  {path:'product', component: ProductComponent},
+  {path:'products/product/:productId', component: ProductComponent},
 
 
   {path:'web-performance/dashboard', component: WebPerformDashboardComponent }

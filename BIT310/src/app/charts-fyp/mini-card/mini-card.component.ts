@@ -18,6 +18,7 @@ export class MiniCardComponent implements OnInit {
   @ViewChild('icon') icon;
 
   @Input() label: string;
+  @Input() total: number;
   @Input() suffix: string;
   @Input() percentage: number;
   @Input() hidechart: boolean;

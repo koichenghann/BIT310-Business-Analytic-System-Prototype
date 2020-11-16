@@ -1,47 +1,22 @@
-import {AfterViewInit, Component, ViewChild, OnInit} from '@angular/core';
-import {MatSort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
-import { MatPaginator } from '@angular/material/paginator';
-import { ProductsService } from './products.service';
+import { Injectable } from '@angular/core';
 
-
-@Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class ProductsComponent implements OnInit {
+export class ProductsService {
 
-  constructor(public productsService: ProductsService) { }
+  constructor() { }
 
-  ngOnInit(): void {
+  getProducts() {
+    return Product;
   }
 
-
-  displayedColumns: string[] = ['productId', 'name', 'price', 'oriStock', 'inStock', 'sold', 'revenue', 'action'];
-  dataSource = new MatTableDataSource<Product>(this.productsService.getProducts());
-
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-
-  ngAfterViewInit() {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
+  getProductById(id: string) {
+    return Product.find(p => p.productId == id);
   }
 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
-  }
 
 }
-
-
-
 
 
 export interface Product {
