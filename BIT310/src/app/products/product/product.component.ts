@@ -11,7 +11,7 @@ export class ProductComponent implements OnInit {
   revenueData = [50, 80, 40, 70];
   revenuePercentage = (this.revenueData[3]-this.revenueData[2])/this.revenueData[2]*100;
 
-  itemSoldData = [50, 80, 40, 70];
+  itemSoldData = [7, 8, 5, 10];
   itemSoldPercentage = (this.itemSoldData[3]-this.itemSoldData[2])/this.itemSoldData[2]*100;
 
   viewData = [80, 40, 70, 50];

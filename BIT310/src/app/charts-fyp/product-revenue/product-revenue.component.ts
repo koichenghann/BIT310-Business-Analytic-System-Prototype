@@ -45,6 +45,24 @@ export class ProductRevenueComponent implements OnInit {
         exporting: {
           enabled: false
         },
+        yAxis: {
+          title: {
+            text: null
+          },
+          labels: {
+            format: '{value} MYR'
+          }
+        },
+        xAxis: {
+          // reversed: false,
+          gridLineWidth: 1,
+          title: {
+            text: null
+          },
+          labels: {
+            format: '{value} Nov'
+          }
+        },
         plotOptions: {
           series: {
               label: {
