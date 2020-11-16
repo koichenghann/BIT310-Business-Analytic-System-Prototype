@@ -41,7 +41,7 @@ export class AreaLineSessionsComponent implements OnInit {
           },
 
           series: {
-            color: 'purple'
+            color: 'orange'
         }
       },
       series: [{

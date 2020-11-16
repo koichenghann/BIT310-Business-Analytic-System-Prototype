@@ -41,7 +41,7 @@ export class AreaLineComponent implements OnInit {
           },
 
           series: {
-            color: 'purple'
+            color: 'orange'
         }
       },
       series: [{
