@@ -41,8 +41,17 @@ export class ProductComponent implements OnInit {
     @ViewChild(MatSort) sort: MatSort;
 
     ngAfterViewInit() {
-      this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.dataSource.paginator = this.paginator;
+    }
+
+    applyFilter(event: Event) {
+      const filterValue = (event.target as HTMLInputElement).value;
+      this.dataSource.filter = filterValue.trim().toLowerCase();
+
+      if (this.dataSource.paginator) {
+        this.dataSource.paginator.firstPage();
+      }
     }
 
 }

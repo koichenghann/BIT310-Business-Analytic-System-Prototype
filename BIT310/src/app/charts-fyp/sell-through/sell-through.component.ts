@@ -9,7 +9,7 @@ import HC_exporting from 'highcharts/modules/exporting';
 })
 export class SellThroughComponent implements OnInit {
 
-  salesData = [71, 78, 39, 66];
+
   chartOptions: {};
   Highcharts = Highcharts;
 

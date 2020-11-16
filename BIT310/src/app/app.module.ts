@@ -54,6 +54,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSortModule } from '@angular/material/sort';
 
 
 import { SideNavService } from './shared/side-nav/side-nav.service';
@@ -170,6 +171,7 @@ import { ProductOrderComponent } from './tables-fyp/product-order/product-order.
     MatDividerModule,
     MatSlideToggleModule,
     MatDialogModule,
+    MatSortModule,
 
 
     HighchartsChartModule
