@@ -87,6 +87,8 @@ import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-
 import { ProductRevenueComponent } from './charts-fyp/product-revenue/product-revenue.component';
 import { SellThroughComponent } from './charts-fyp/sell-through/sell-through.component';
 import { ProductOrderComponent } from './tables-fyp/product-order/product-order.component';
+import { VisitorComponent } from './visitor/visitor.component';
+import { SalesComponent } from './sales/sales.component';
 
 @NgModule({
   declarations: [
@@ -131,7 +133,9 @@ import { ProductOrderComponent } from './tables-fyp/product-order/product-order.
     WebPerformDashboardComponent,
     ProductRevenueComponent,
     SellThroughComponent,
-    ProductOrderComponent
+    ProductOrderComponent,
+    VisitorComponent,
+    SalesComponent
 
 
 
