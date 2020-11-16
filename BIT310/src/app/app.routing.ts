@@ -23,7 +23,7 @@ import { DashboardFypComponent } from './dashboard-fyp/dashboard-fyp.component';
 import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
 
 const APP_ROUTES: Routes = [
-  {path:'', redirectTo: '/dashboard', pathMatch: 'full'},
+  {path:'', redirectTo: '/dashboard-fyp', pathMatch: 'full'},
   {path:'login', component: LoginComponent},
   {path:'signup', component: SignupComponent},
   {path:'dashboard', component: DashboardComponent},
