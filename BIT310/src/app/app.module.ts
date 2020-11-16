@@ -77,8 +77,8 @@ import { MiniCardComponent } from './charts-fyp/mini-card/mini-card.component';
 // import { CardComponent } from './test-area/widgets/card/card.component';
 
 
-
-
+import { AreaLineSessionsComponent } from './webPerformDashboard/widgets/area-line-sessions/area-line-sessions.component';
+import { AreaLineComponent } from './webPerformDashboard/widgets/area-line/area-line.component';
 import { SideNavbarComponent } from './webPerformDashboard/sideNavBar/side-navbar.component';
 import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.component';
 import { WebTrafficComponent } from './webPerformDashboard/web-traffic/web-traffic.component';
@@ -121,13 +121,15 @@ import { SellThroughComponent } from './charts-fyp/sell-through/sell-through.com
     MiniCardComponent,
 
 
-
+    AreaLineSessionsComponent,
+    AreaLineComponent,
     SideNavbarComponent,
     UserTrackComponent,
     WebTrafficComponent,
     WebPerformDashboardComponent,
     ProductRevenueComponent,
     SellThroughComponent
+
 
 
 

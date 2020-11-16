@@ -68,6 +68,22 @@ export class SideNavbarComponent {
       }
 
 
+      //if (this.userType=='recycler'){
+        //this.list_item_1 = 'Dashboard';
+        //this.list_item_2 = 'Manage Profile';
+        //this.list_item_3 = 'Submission History';
+        //this.list_item_4 = 'View All Appointments';
+        //this.list_item_5 = 'Add new Appointment';
+        //this.list_item_6 = 'Logout';
+
+        //this.route1 = '/dashboard-user';
+        //this.route2 = '/manage-profile';
+        //this.route3 = '/history';
+        //this.route4 = '/record-submission';
+        //this.route5 = '/make-appointment';
+        //this.route6 = '';
+
+      //}
 
 
     }
