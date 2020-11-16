@@ -19,7 +19,8 @@ import { VisitorComponent } from './visitor/visitor.component';
 import { SalesComponent } from './sales/sales.component';
 import { DashboardFypComponent } from './dashboard-fyp/dashboard-fyp.component';
 
-
+import { PageWebTrafficComponent } from './webPerformDashboard/page-web-traffic/detailed-web-traffic.component';
+import { PageUserMetricComponent } from './webPerformDashboard/page-detailed-user-metric/detailed-user-metric.component';
 import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
 
 const APP_ROUTES: Routes = [
@@ -47,7 +48,9 @@ const APP_ROUTES: Routes = [
 
 
 
-  {path:'web-performance/dashboard', component: WebPerformDashboardComponent }
+  {path:'web-performance/dashboard', component: WebPerformDashboardComponent },
+  {path:'web-performance/web-traffic', component: PageWebTrafficComponent },
+  {path:'web-performance/user-metric', component: PageUserMetricComponent }
 
   // {path:'', redirectTo: '/home', pathMatch: 'full'},
 ];
