@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 
@@ -9,10 +9,19 @@ import HC_exporting from 'highcharts/modules/exporting';
   styleUrls: ['./mini-card.component.scss']
 })
 export class MiniCardComponent implements OnInit {
+  customColor = 'blue';
+
+//#03bf00
+  @ViewChild('percentage') percent;
+  @ViewChild('icon') icon;
+
   @Input() label: string;
   @Input() total: string;
   @Input() percentage: string;
   @Input() hidechart: boolean;
+  @Input() colorTheme: string;
+  @Input() data: number[];
+
 
   chartOptions: {};
   Highcharts = Highcharts;
@@ -21,6 +30,10 @@ export class MiniCardComponent implements OnInit {
 
 
   constructor() { }
+
+  ngAfterViewInit() {
+  this.customColor = this.colorTheme;
+  }
 
   ngOnInit(): void {
 
@@ -83,19 +96,19 @@ export class MiniCardComponent implements OnInit {
           visible: false
         },
         plotOptions: {
-        spline: {
-            marker: {
-                enabled: false,
-                radius: 4,
-                lineColor: '#32a852',
-                lineWidth: 1
-              },
-              lineColor: '#03bf00'
-            }
+          spline: {
+              marker: {
+                  enabled: false,
+                  radius: 4,
+                  lineColor: this.colorTheme,
+                  lineWidth: 1
+                },
+                lineColor: this.colorTheme
+              }
         },
 
         series: [{
-          data: [71, 78, 39, 66]
+          data: this.data
         }]
     };
 

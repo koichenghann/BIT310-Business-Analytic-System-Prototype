@@ -84,6 +84,7 @@ import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.
 import { WebTrafficComponent } from './webPerformDashboard/web-traffic/web-traffic.component';
 import { WebPerformDashboardComponent } from './webPerformDashboard/web-perform-dashboard.component';
 import { ProductRevenueComponent } from './charts-fyp/product-revenue/product-revenue.component';
+import { SellThroughComponent } from './charts-fyp/sell-through/sell-through.component';
 
 @NgModule({
   declarations: [
@@ -125,7 +126,8 @@ import { ProductRevenueComponent } from './charts-fyp/product-revenue/product-re
     UserTrackComponent,
     WebTrafficComponent,
     WebPerformDashboardComponent,
-    ProductRevenueComponent
+    ProductRevenueComponent,
+    SellThroughComponent
 
 
 

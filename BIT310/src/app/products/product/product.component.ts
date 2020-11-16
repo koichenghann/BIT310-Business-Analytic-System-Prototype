@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
+  salesData = [50, 80, 40, 70];
+  salesPercentage = (this.salesData[3]-this.salesData[2])/this.salesData[2]*100;
   constructor() { }
 
   ngOnInit(): void {

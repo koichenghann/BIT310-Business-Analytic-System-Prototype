@@ -5,16 +5,16 @@
     <div class="main-wrapper">
       <div  fxLayout="row" class="card-array-wrapper">
         <div id="card-1" class="mini-card-wrapper">
-          <app-mini-card label="Sales" total="18k" percentage="50" ></app-mini-card>
+          <app-mini-card label="Sales" total="18k" [percentage]="salesPercentage" colorTheme="#03bf00" [data]="salesData"></app-mini-card>
         </div>
         <div id="card-2" class="mini-card-wrapper">
-          <app-mini-card label="Sales" total="18k" percentage="50" hidechart="true"></app-mini-card>
+          <app-mini-card label="Sales" total="18k" percentage="50" colorTheme="#03bf00" [data]="salesData"></app-mini-card>
         </div>
         <div id="card-1" class="mini-card-wrapper">
-          <app-mini-card label="Sales" total="18k" percentage="50" hidechart="true"></app-mini-card>
+          <app-mini-card label="Sales" total="18k" percentage="50" colorTheme="#03bf00" [data]="salesData"></app-mini-card>
         </div>
         <div id="card-2" class="mini-card-wrapper">
-          <app-mini-card label="Sales" total="18k" percentage="50" hidechart="true"></app-mini-card>
+          <app-mini-card label="Sales" total="18k" percentage="50" colorTheme="#03bf00" [data]="salesData"></app-mini-card>
         </div>
         <!-- <app-mini-card></app-mini-card>
         <app-mini-card></app-mini-card> -->
@@ -28,7 +28,7 @@
          <app-product-revenue></app-product-revenue>
         </div>
         <div class="medium-card-wrapper">
-          <app-mini-card label="Sales" total="18k" percentage="50" hidechart="true"></app-mini-card>
+          <app-sell-through></app-sell-through>
         </div>
       </div>
     </div>

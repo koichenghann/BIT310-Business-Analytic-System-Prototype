@@ -18,11 +18,11 @@
       <mat-card-title>{{ label }}</mat-card-title>
       <span class="total">{{ total }}</span>
     </div>
-    <div *ngIf="!hidechart" class="widget">
+    <div *ngIf="!hidechart" class="widget" id="widget">
       <span >
-        <mat-icon class="mat-icon">trending_up</mat-icon>
+        <mat-icon class="mat-icon" [ngStyle]="{'color': customColor}">trending_up</mat-icon>
       </span>
-      <span class="description">
+      <span class="description" [ngStyle]="{'color': customColor}">
         {{ percentage }}%
       </span>
       <highcharts-chart
