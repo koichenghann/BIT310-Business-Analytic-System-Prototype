@@ -1,6 +1,9 @@
 import { Component,  OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import * as Malaysia from '@highcharts/map-collection/countries/my/my-all.geo.json';
+import MapModule from 'highcharts/modules/map';
+
+
+MapModule(Highcharts);
 
 @Component({
   selector:'app-widget-map-location',
@@ -9,11 +12,29 @@ import * as Malaysia from '@highcharts/map-collection/countries/my/my-all.geo.js
 
 })
 
+
 export class MapLocationComponent implements OnInit {
-  chartOptions: {};
-  Highcharts = Highcharts;
+
+
+
 
   constructor() {};
+
+  title = "app";
+  chart;
+  updateFromInput = false;
+  Highcharts = Highcharts;
+  chartConstructor = "mapChart";
+  chartCallback;
+  chartOptions;
+
+
+
+
+
+
+
+
 
   ngOnInit(){
     var mapdata = [
@@ -37,7 +58,7 @@ export class MapLocationComponent implements OnInit {
 
     this.chartOptions =  {
       chart: {
-          map: 'Malaysia'
+          map: 'countries/my/my-all'
       },
 
       title: {
@@ -84,3 +105,6 @@ export class MapLocationComponent implements OnInit {
 
 
 }
+
+}
+

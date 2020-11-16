@@ -80,7 +80,8 @@ import { AreaSplineComponent } from './webPerformDashboard/widgets/area-spline/a
 import { AreaLineUsersComponent } from './webPerformDashboard/widgets/area-line-users/area-line-users.component';
 import { AreaLineSessionsComponent } from './webPerformDashboard/widgets/area-line-sessions/area-line-sessions.component';
 import { AreaLineComponent } from './webPerformDashboard/widgets/area-line/area-line.component';
-import { MapLocationComponent } from './webPerformDashboard/widgets/map-location-my/map-location-my.component'
+//import { MapLocationComponent } from './webPerformDashboard/widgets/map-location-my/map-location-my.component';
+import { SemiPieComponent } from './webPerformDashboard/widgets/semi-pie/semi-pie.component';
 import { SideNavbarComponent } from './webPerformDashboard/sideNavBar/side-navbar.component';
 import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.component';
 import { WebTrafficComponent } from './webPerformDashboard/web-traffic/web-traffic.component';
@@ -131,7 +132,8 @@ import { OrderTableComponent } from './sales/order-table/order-table.component';
     AreaLineUsersComponent,
     AreaLineSessionsComponent,
     AreaLineComponent,
-    MapLocationComponent,
+    //MapLocationComponent,
+    SemiPieComponent,
     SideNavbarComponent,
     UserTrackComponent,
     WebTrafficComponent,
