@@ -83,6 +83,8 @@ import { AreaLineComponent } from './webPerformDashboard/widgets/area-line/area-
 import { BarTrafficSourceComponent } from './webPerformDashboard/widgets/bar-traffic-source/bar-traffic-source.component';
 import { ColumnUserBehaviorComponent } from './webPerformDashboard/widgets/column-user-behavior/column-user-behavior.component';
 import { LineUserMetricComponent } from './webPerformDashboard/widgets/line-user-metric/line-user-metric.component';
+import { TableUserMetricComponent }from './webPerformDashboard/widgets/table-user-metric/table-user-metric.component'
+import { TableUserBehaviorComponent } from './webPerformDashboard/widgets/table-user-behavior/table-user-behavior.component';
 import { TableWebSourceComponent } from './webPerformDashboard/widgets/table-web-source/table-web-source.component';
 import { TableAllTrafficComponent } from './webPerformDashboard/widgets/table-all-traffic/table-all-traffic.component';
 import { PageWebTrafficComponent } from './webPerformDashboard/page-web-traffic/detailed-web-traffic.component';
@@ -154,6 +156,8 @@ import { KpiListTableComponent } from './dashboard-fyp/kpi-list-table/kpi-list-t
     PieTrafficChannelComponent,
     PageWebTrafficComponent,
     PageUserMetricComponent,
+    TableUserMetricComponent,
+    TableUserBehaviorComponent,
     TableWebSourceComponent,
     TableAllTrafficComponent,
     SemiPieComponent,
