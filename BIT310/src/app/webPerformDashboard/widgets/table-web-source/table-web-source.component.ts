@@ -15,8 +15,8 @@ export class TableWebSourceComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  displayedColumns: string[] = ['userId', 'name', 'orders', 'spending'];
-  dataSource = new MatTableDataSource<Customer>(customers);
+  displayedColumns: string[] = ['channel', 'sessions', 'percentOfTraffic', 'change'];
+  dataSource = new MatTableDataSource<Traffic>(traffics);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -40,27 +40,21 @@ export class TableWebSourceComponent implements OnInit {
 
 
 
-export interface Customer {
-  userId: string,
-  name: string,
-  spending: number,
-  orders: number
+export interface Traffic {
+  channel: string,
+  sessions: string,
+  percentOfTraffic: string,
+  trend: string,
+  icon: string
 }
 
-const customers: Customer[] = [
-  {userId: 'u001', name: 'Jack',   spending: 10,  orders:  1},
-  {userId: 'u002', name: 'James',  spending: 20,  orders:  2},
-  {userId: 'u003', name: 'John',   spending: 40,  orders:  4},
-  {userId: 'u004', name: 'Jane',   spending: 20,  orders:  2},
-  {userId: 'u005', name: 'Janete', spending: 30,  orders:  2},
-  {userId: 'u006', name: 'Joshua', spending: 5,   orders:  1},
-  {userId: 'u007', name: 'Jacky',  spending: 13,  orders:  1},
-  {userId: 'u008', name: 'Jeff',   spending: 12,  orders:  1},
-  {userId: 'u009', name: 'Sam',    spending: 5,   orders:  1},
-  {userId: 'u010', name: 'Simson', spending: 120, orders:  5},
-  {userId: 'u011', name: 'Sunny',  spending: 30,  orders:  2},
-  {userId: 'u012', name: 'Steve',  spending: 70,  orders:  3},
-  {userId: 'u013', name: 'Stant',  spending: 15,  orders:  2},
-  {userId: 'u014', name: 'Rose',   spending: 8,   orders:  1},
-  {userId: 'u015', name: 'Amy',    spending: 20,  orders:  2},
+const traffics: Traffic[] = [
+  {channel: 'Direct', sessions: '1015',  percentOfTraffic: '35.8%', trend:  '1.6%' , icon: 'fas fa-caret-up'},
+  {channel: 'Referral', sessions: '439',  percentOfTraffic: '17.6%', trend:  '0.9%', icon: 'fas fa-caret-up'},
+  {channel: 'Email', sessions: '258',  percentOfTraffic: '12.8%', trend:  '0.8%', icon: 'fas fa-caret-down'},
+  {channel: 'Paid Search', sessions: '129',  percentOfTraffic: '9.6%', trend:  '1.5%', icon: 'fas fa-caret-down'},
+  {channel: 'Search', sessions: '103',  percentOfTraffic: '9.2%', trend:  '0.5%', icon: 'fas fa-caret-up'},
+  {channel: 'Social Media', sessions: '98',  percentOfTraffic: '8.4%', trend:  '0.7%', icon: 'fas fa-caret-down'},
+  {channel: 'Others', sessions: '34',  percentOfTraffic: '4.3%', trend:  '0.6%', icon: 'fas fa-caret-up'}
+
 ];

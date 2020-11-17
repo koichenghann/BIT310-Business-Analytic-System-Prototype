@@ -9,7 +9,7 @@
       <div  fxLayout="row">
         <!-- Card Header -->
         <div class="table-title">
-         All Traffic Souces
+         All Site Traffic
         </div>
         <div class="filler"></div>
         <div class="custom-date-range">
@@ -29,9 +29,9 @@
     <table mat-table [dataSource]="dataSource" matSort matSortActive="spending" matSortDirection="desc">
 
       <!-- Channel Column -->
-      <ng-container matColumnDef="channel">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header class="header-cell"> Channel </th>
-        <td mat-cell *matCellDef="let element"> {{element.channel}} </td>
+      <ng-container matColumnDef="referrer">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="header-cell"> Referrer </th>
+        <td mat-cell *matCellDef="let element"> {{element.referrer}} </td>
       </ng-container>
 
       <!-- Sessions Column -->
@@ -53,6 +53,11 @@
            <i class="{{element.icon}}"></i>&nbsp;{{element.trend}} </td>
       </ng-container>
 
+      <ng-container matColumnDef="ipAddress">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="header-cell"> IP Address </th>
+        <td mat-cell *matCellDef="let element">
+           {{element.ip}} </td>
+      </ng-container>
 
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
