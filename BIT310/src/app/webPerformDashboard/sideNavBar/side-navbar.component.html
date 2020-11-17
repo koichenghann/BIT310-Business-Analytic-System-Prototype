@@ -18,16 +18,14 @@
 
       <a mat-list-item
         routerLink='/web-performance/web-traffic'
-        routerLinkActive="active-link"><i class="fas fa-globe-asia"></i> &nbsp;&nbsp; Web Traffics</a>
+        routerLinkActive="active-link"><i class="fas fa-globe-asia"></i> &nbsp;&nbsp; Web Traffics Report</a>
 
       <a mat-list-item
         routerLink='/web-performance/user-metric'
-        routerLinkActive="active-link"><i class="fas fa-chart-line"></i> &nbsp;&nbsp; User Metrics</a>
+        routerLinkActive="active-link"><i class="fas fa-chart-line"></i> &nbsp;&nbsp; User Behavior Report</a>
 
 <mat-divider></mat-divider>
-      <a mat-list-item
-        routerLink="/profile"
-        routerLinkActive="active-link"><i class="fas fa-user-circle"></i> &nbsp;&nbsp; Profile</a>
+
 
       <!-- <a mat-list-item
         routerLink="/subscription"
@@ -38,7 +36,7 @@
       <a mat-list-item [routerLink]="route4" routerLinkActive="active-link"><i class="fas fa-calendar-check"></i> &nbsp; {{ list_item_4 }}</a>
       <a mat-list-item [routerLink]="route5" routerLinkActive="active-link"><i class="fas fa-plus-circle"></i> &nbsp; {{ list_item_5 }}</a>
     -->
-      <a (click)="logout()" routerLink="/login" routerLinkActive="active-link" mat-list-item href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; {{ list_item_6 }}</a>
+      <a (click)="logout()"  routerLinkActive="active-link" mat-list-item href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; {{ list_item_6 }}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

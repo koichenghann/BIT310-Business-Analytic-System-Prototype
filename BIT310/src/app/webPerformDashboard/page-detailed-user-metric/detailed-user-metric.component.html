@@ -1,14 +1,29 @@
 <side-navbar>
   <mat-grid-list cols="1" rowsHeight="1:1">
-    <mat-card class="summary-top-card mat-elevation-z2">
-      <mat-card-header>
-        <mat-card-title>User Metric Reports</mat-card-title>
-        <mat-card-subtitle>Website: www.helpemerhandising.com.my</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
 
+      <!--Page header-->
+      <div class="margin-1">
+        <h1 class="page-title">User behavior Reports</h1>
+        <h3 class="page-subtitle">Website: www.helpemerhandising.com.my</h3>
+      </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap="1em" class="stats-cards-2 margin-1">
+    <mat-card class="summary-top-card mat-elevation-z2" fxFlex="40">
+
+      <mat-card-content>
+        <app-line-user-metric></app-line-user-metric>
       </mat-card-content>
     </mat-card>
+
+
+    <mat-card class="summary-top-card mat-elevation-z2" fxFlex="60">
+
+      <mat-card-content>
+        <app-column-user-behavior></app-column-user-behavior>
+      </mat-card-content>
+    </mat-card>
+
+    </div>
   </mat-grid-list>
 </side-navbar>
 

@@ -81,12 +81,14 @@ import { AreaLineUsersComponent } from './webPerformDashboard/widgets/area-line-
 import { AreaLineSessionsComponent } from './webPerformDashboard/widgets/area-line-sessions/area-line-sessions.component';
 import { AreaLineComponent } from './webPerformDashboard/widgets/area-line/area-line.component';
 import { BarTrafficSourceComponent } from './webPerformDashboard/widgets/bar-traffic-source/bar-traffic-source.component';
+import { ColumnUserBehaviorComponent } from './webPerformDashboard/widgets/column-user-behavior/column-user-behavior.component';
+import { LineUserMetricComponent } from './webPerformDashboard/widgets/line-user-metric/line-user-metric.component';
 import { TableWebSourceComponent } from './webPerformDashboard/widgets/table-web-source/table-web-source.component';
 import { TableAllTrafficComponent } from './webPerformDashboard/widgets/table-all-traffic/table-all-traffic.component';
 import { PageWebTrafficComponent } from './webPerformDashboard/page-web-traffic/detailed-web-traffic.component';
 import { PageUserMetricComponent } from './webPerformDashboard/page-detailed-user-metric/detailed-user-metric.component';
 //import { MapLocationComponent } from './webPerformDashboard/widgets/map-location-my/map-location-my.component';
-import { PieTrafficChannelComponent } from './webPerformDashboard/widgets/pie-traffic-channel/pie-traffic-channel.component'
+import { PieTrafficChannelComponent } from './webPerformDashboard/widgets/pie-traffic-channel/pie-traffic-channel.component';
 import { SemiPieComponent } from './webPerformDashboard/widgets/semi-pie/semi-pie.component';
 import { SideNavbarComponent } from './webPerformDashboard/sideNavBar/side-navbar.component';
 import { UserTrackComponent } from './webPerformDashboard/user-track/user-track.component';
@@ -146,6 +148,8 @@ import { KpiListTableComponent } from './dashboard-fyp/kpi-list-table/kpi-list-t
     AreaLineSessionsComponent,
     AreaLineComponent,
     BarTrafficSourceComponent,
+    ColumnUserBehaviorComponent,
+    LineUserMetricComponent,
     //MapLocationComponent,
     PieTrafficChannelComponent,
     PageWebTrafficComponent,
